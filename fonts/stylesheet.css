@@ -1,0 +1,294 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins-Regular.woff2') format('woff2'),
+        url('Poppins-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins-SemiBold.woff2') format('woff2'),
+        url('Poppins-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins-SemiBoldItalic.woff2') format('woff2'),
+        url('Poppins-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'OwnersTRIAL';
+    src: url('OwnersTRIAL-Black.woff2') format('woff2'),
+        url('OwnersTRIAL-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins-Thin.woff2') format('woff2'),
+        url('Poppins-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'OwnersTRIAL';
+    src: url('OwnersTRIAL-BlackItalic.woff2') format('woff2'),
+        url('OwnersTRIAL-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'OwnersTRIAL';
+    src: url('OwnersTRIAL-BoldItalic.woff2') format('woff2'),
+        url('OwnersTRIAL-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins-ThinItalic.woff2') format('woff2'),
+        url('Poppins-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'OwnersTRIAL';
+    src: url('OwnersTRIAL-Bold.woff2') format('woff2'),
+        url('OwnersTRIAL-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'OwnersTRIAL';
+    src: url('OwnersTRIAL-Medium.woff2') format('woff2'),
+        url('OwnersTRIAL-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'OwnersTRIAL';
+    src: url('OwnersTRIAL-LightItalic.woff2') format('woff2'),
+        url('OwnersTRIAL-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'OwnersTRIAL';
+    src: url('OwnersTRIAL-Light.woff2') format('woff2'),
+        url('OwnersTRIAL-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'OwnersTRIAL';
+    src: url('OwnersTRIAL-MediumItalic.woff2') format('woff2'),
+        url('OwnersTRIAL-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Owners TRIAL Narrow';
+    src: url('OwnersTRIALNarrow-Medium.woff2') format('woff2'),
+        url('OwnersTRIALNarrow-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Owners TRIAL Narrow';
+    src: url('OwnersTRIALNarrow-Light.woff2') format('woff2'),
+        url('OwnersTRIALNarrow-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Owners TRIAL Narrow';
+    src: url('OwnersTRIALNarrow-LightItalic.woff2') format('woff2'),
+        url('OwnersTRIALNarrow-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Owners TRIAL Narrow';
+    src: url('OwnersTRIALNarrow-RegularItalic.woff2') format('woff2'),
+        url('OwnersTRIALNarrow-RegularItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Owners TRIAL Narrow';
+    src: url('OwnersTRIALNarrow-MediumItalic.woff2') format('woff2'),
+        url('OwnersTRIALNarrow-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Owners TRIAL Narrow';
+    src: url('OwnersTRIALNarrow-Regular.woff2') format('woff2'),
+        url('OwnersTRIALNarrow-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Owners TRIAL Narrow';
+    src: url('OwnersTRIALNarrow-XBlackItalic.woff2') format('woff2'),
+        url('OwnersTRIALNarrow-XBlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Owners TRIAL Narrow';
+    src: url('OwnersTRIALNarrow-XLight.woff2') format('woff2'),
+        url('OwnersTRIALNarrow-XLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Owners TRIAL Narrow';
+    src: url('OwnersTRIALNarrow-XLightItalic.woff2') format('woff2'),
+        url('OwnersTRIALNarrow-XLightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Owners TRIAL Narrow';
+    src: url('OwnersTRIALNarrow-XBlack.woff2') format('woff2'),
+        url('OwnersTRIALNarrow-XBlack.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'OwnersTRIAL';
+    src: url('OwnersTRIAL-RegularItalic.woff2') format('woff2'),
+        url('OwnersTRIAL-RegularItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'OwnersTRIAL';
+    src: url('OwnersTRIAL-Regular.woff2') format('woff2'),
+        url('OwnersTRIAL-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Owners TRIAL XWide';
+    src: url('OwnersTRIALXWide-Medium.woff2') format('woff2'),
+        url('OwnersTRIALXWide-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Owners TRIAL Wide';
+    src: url('OwnersTRIALWide-Medium.woff2') format('woff2'),
+        url('OwnersTRIALWide-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Owners TRIAL Wide';
+    src: url('OwnersTRIALWide-Medium.woff2') format('woff2'),
+        url('OwnersTRIALWide-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Owners TRIAL Wide';
+    src: url('OwnersTRIALWide-Regular.woff2') format('woff2'),
+        url('OwnersTRIALWide-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Owners TRIAL Wide';
+    src: url('OwnersTRIALWide-RegularItalic.woff2') format('woff2'),
+        url('OwnersTRIALWide-RegularItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+
+
+
+
+
+
+@font-face {
+    font-family: 'ParkLaneW00';
+    src: url('ParkLaneW00-Bold.woff2') format('woff2'),
+        url('ParkLaneW00-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ParkLaneW00';
+    src: url('ParkLaneW00-Bold.woff2') format('woff2'),
+        url('ParkLaneW00-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+

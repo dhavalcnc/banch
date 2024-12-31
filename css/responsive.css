@@ -1,0 +1,412 @@
+@media only screen and (max-width:1750px){
+  #full_wrapper { overflow: hidden; }
+  h1 { font-size: 125px; }
+  .wrapper { max-width: 1500px; }
+  .banchmarketing h2 { font-size: 139px; }
+  .team_extension .col { padding: 182px 0 229px; max-width: 60%; }
+  .team_extension .man { position: absolute; right: -1%; bottom: -60px; max-width: 61%;}
+  .team_extension p{padding-right: 100px;}
+  .social_media h2,.emailsec .left_col h2,.team_extension h2,
+  .on_instagram .text_title h2,
+  .trusted_by h2,
+  .profitable_campaigns .left_col h2,
+  .our_goal h2,
+  .ads_comman_section h2,.paid_ads_service h2,.other_services h2 { font-size: 74px; line-height: 1.2; }
+  .on_instagram .text_title h2 { width: 601px; }
+  .on_instagram .text_title p { width: calc(100% - 605px); }
+  .paid_ads .marquee .item img { min-height: 100%; }
+
+  .service_link .inner a { font-size: 30px; line-height: 117px; padding: 0px 40px; }
+  .profitable_campaigns .left_col,#ecommerce.profitable_campaigns .left_col { max-width: 60%; }
+ 
+  .profitable_campaigns .animation_col { width: 410px; height: 530px; margin-top: -80px; }
+  .ads_link li a { font-size: 22px; line-height: 65px; padding: 0px 40px; }
+  .our_goal { margin-top: -169px; }
+  .our_goal .inner .left_col { width: 40%; }
+  .our_goal .inner .right_col { width: 52%; }
+  .our_goal .inner .right_col li h3 { font-size: 50px; line-height: 45px; transform: translateX(-103px); }
+
+  #campaigns_growth.profitable_campaigns, #ecommerce.profitable_campaigns, #seo.profitable_campaigns , .profitable_campaigns { padding: 250px 0 100px; }
+  .other_services .colin>span { font-size: 45px; line-height: 50px;}
+  .other_services .colin>img{max-width: 150px;}
+
+
+}
+@media only screen and (max-width:1599px){
+  .wrapper { max-width: 1300px; }
+  .banchmarketing h2 { font-size: 122px; }
+  p { font-size: 18px;line-height: 1.6 !important; }
+  h1 { font-size: 100px; line-height: 1.3; }
+  .banner_image { height:600px; max-height: 600px; margin-top: -300px; }
+  .banner{min-height: 500px;}
+  .mail_wrap .imgWrap { height: 600px; }
+  .paid_ads .marquee .item { width: 260px; height: 270px; max-width:260px; }
+  .team_extension .wrapper { padding: 0 40px; }
+  .affordable h2 { font-size: 70px; }
+  .team_extension .b_brand { top: -60px; max-width: 150px; }
+  .team_extension .col { padding: 130px 0 170px; max-width: 60%; }
+  .team_extension .man { right: -10%; bottom: -40px; max-width: 61%; }
+  #customers-testimonials .item .shadow-effect { padding: 20px 25px; }
+
+  #customers-testimonials,
+  #customers-testimonials .item{height: 645px;}
+  #customers-testimonials .item {width:calc(33.33% - 20px);}
+  #customers-testimonials .item .shadow-effect .video-container #video { height: 513px; padding: 15px 0;} 
+  .on_instagram.active #customers-testimonials .item:nth-child(2){left: calc(33.33% + 20px);}
+  .on_instagram.active #customers-testimonials .item:nth-child(3){left: calc(66.66% + 40px);}
+  .comman_sec { padding-bottom: 70px; }
+  .banchmarketing h2 { font-size: 120px; }
+  .social_media h2,.emailsec .left_col h2,.team_extension h2,
+  .on_instagram .text_title h2,
+  .trusted_by h2,
+  .profitable_campaigns .left_col h2,
+  .our_goal h2,
+  .ads_comman_section h2,.paid_ads_service h2 ,.other_services h2{ font-size: 64px; line-height: 1.2;}
+  .social_media { padding: 120px 0 300px !important; }
+  .emailsec .wrapper { border-radius: 40px; padding: 60px 50px; }
+  .emailsec .right_col { width: 50%; }
+  .emailsec { margin-top: -230px; }
+  .top_footer p { width: 33%; font-size: 24px; }
+
+  .service_link .inner a:not(:last-child) { margin-right: 20px; }
+
+
+
+}
+@media only screen and (max-width:1399px){
+  .wrapper { max-width:1200px; }
+  .brand{max-width: 130px;}
+  header { padding: 30px 0; }
+  header nav>ul>li { margin: 0px 25px; }
+  .banner { padding-top: 170px; }
+  h1 { font-size: 90px; line-height: 1.3; }
+  .banner .circle { top: 0; max-width: 220px; }
+  .marquee_plateform { padding: 45px 0 0; }
+  .marquee_plateform .marquee .item>span { font-size: 70px; line-height: 130px; }
+  .marquee_plateform .marquee .item>span>span { line-height: 60px; padding: 0px 26px; font-size: 35px; }
+  .affordable h2 { font-size: 60px; }
+  .banchmarketing h2 { font-size: 112px; }
+  .title h2 { font-size: 40px; line-height: 42px; }
+  footer .rr_footer { padding: 0px 10px; }
+  .social_media .bg { top: -170px; }
+
+  .service_link { margin-top: -56.5px; }
+  .service_link .inner a { font-size: 26px; line-height: 70px; padding: 0px 30px; }
+  .profitable_campaigns { margin-top: -56.5px; }
+  #campaigns_growth.profitable_campaigns, #ecommerce.profitable_campaigns, #seo.profitable_campaigns, .profitable_campaigns { padding: 180px 0 100px; }
+  .profitable_campaigns .animation_col { width: 340px; height: 480px; margin-top: -70px; }
+  .our_goal .inner .img { height: 310px; }
+  .ads_comman_section .paid_img { top: 210px; max-width: 170px; }
+  .ads_comman_section .col { max-width: 860px; }
+  .our_goal { margin-top: -149px; }
+  .our_goal .wrapper { padding: 100px 0 120px; }
+  .other_services .colin { height: 450px; padding: 25px 30px 40px; }
+  .other_services .colin .bg>span { font-size: 30px; }
+  .other_services .colin>span { font-size: 35px; line-height: 40px; }
+  .other_services .colin .bg { padding: 25px 30px; }
+
+
+
+}
+@media only screen and (max-width:1279px){
+  .wrapper {padding: 0px 40px;}
+    h1 { font-size: 70px; line-height: 1.3; }
+    .banner .circle { top: -10px; max-width: 180px; right: 40px; }
+    .banner .text { max-width: 416px; }
+    .lets_talk { padding: 9.85px 12.11px 9.85px 34.45px; }
+    .lets_talk span { font-size: 20px; line-height: 1; margin-right: 20px; }
+    .lets_talk ul li span { width: 50px; height: 50px; }
+    .lets_talk ul li+li { margin-left: -25px; }
+    .banner_image .bg { top: 2% ; transform: scale3d(0.3, 0.3, 1) ; }
+    .banner_image { height: 500px; max-height: 500px; margin-top: -300px; }
+    .paid_ads .marquee .item { width: 220px; height: 200px; max-width: 220px; }
+    .email_wrap .imgWrap { height: 420px; width: calc(33.33% - 20px); }
+    .social_media h2, .emailsec .left_col h2, .team_extension h2, .on_instagram .text_title h2, .trusted_by h2, .profitable_campaigns .left_col h2, .our_goal h2, .ads_comman_section h2, .paid_ads_service h2 ,.other_services h2{ font-size: 50px; line-height: 1.2; }
+
+    .affordable h2 { font-size: 50px; line-height: 100px; }
+    .affordable { margin-top: -50px;padding: 0px 20px; }
+    .comman_sec { margin-top: -50px; }
+    .team_extension .col { padding: 110px 0 100px; max-width: 58%; }
+    .team_extension { border-radius: 50px 50px 0px 0px; }
+    .team_extension .b_brand { top: -40px; max-width: 110px; }
+    .trusted_by { padding: 110px 0px 0px; }
+    .trusted_by h2{margin-bottom: 20px;}
+    .trusted_by  .col { width: 23.77%; height: 176px; }
+    .on_instagram .text_title h2 { width: 411px; }
+    .on_instagram .text_title p { width: calc(100% - 411px); }
+    .banchmarketing h2 { font-size: 90px; }
+    .trusted_by .col:hover { transform: scale(1.2); }
+    .video-con-img picture img{width: 40px;}
+
+    #customers-testimonials,
+    #customers-testimonials .item{height: 470px;}
+    #customers-testimonials .item {width:calc(33.33% - 20px);}
+    #customers-testimonials .item .shadow-effect .video-container #video { height:350px; padding: 10px 0;} 
+    .on_instagram.active #customers-testimonials .item:nth-child(2){left: calc(33.33% + 20px);}
+    .on_instagram.active #customers-testimonials .item:nth-child(3){left: calc(66.66% + 40px);}
+    #customers-testimonials .play-icon,
+    #customers-testimonials .pause-icon{width: 50px;height: 50px;background-size: contain;}
+    #customers-testimonials .item .bg .bk_icon{width: 40px;}
+    .emailsec { margin-top: -230px; padding: 0px 20px; }
+    #customers-testimonials .item .bg .bk_icon { left: 25px; top: 20px; }
+    .emailsec .right_col .email { padding: 30px 35px; background-position: right 20px center;
+      background-size: 50px;}
+    .emailsec .right_col .email em { font-size: 24px; line-height: 20px; margin-bottom: 15px; }
+    p { font-size: 16px; line-height: 1.6 !important; }
+    footer .top_footer p { width: 320px; font-size: 18px; line-height: 1.7 !important; }
+    footer .top_footer>ul>li:not(:last-child) { margin-bottom: 22px; }
+    footer .top_footer .let_blog>img { max-width: 250px; }
+    footer .bottom_footer .wrapper { padding: 10px 30px;}
+
+    .inner_banner .circle { right: 30px; max-width: 200px; }
+    .service_link .inner a:not(:last-child) { margin-right: 10px; }
+    .service_link .inner a img { margin-right: 10px; max-width: 40px; }
+    .service_link .inner a { font-size: 26px; line-height: 70px; padding: 0px 16px; }
+    .inner_banner { padding: 200px 0; }
+    .profitable_campaigns .animation_col { width: 260px; height: 330px; margin-top: -70px; }
+    .ads_link li a { font-size: 17px; line-height: 55px; padding: 0px 30px; }
+    .ads_link li+li { margin-left: -25px; }
+    .animations_title h2 { line-height: 118px; font-size: 100px; }
+    .animations_title { margin-top: 30px; }
+    #campaigns_growth.profitable_campaigns, #ecommerce.profitable_campaigns, #seo.profitable_campaigns, .profitable_campaigns { padding: 220px 0 60px; }
+    .our_goal,.paid_ads_service,.ads_comman_section.ads_comman_section_curve { margin-top: -109px;padding:0 40px; }
+    .our_goal .inner .right_col li { padding: 25px 0; }
+    .our_goal .inner .right_col li h3 { font-size: 35px; line-height: 45px; transform: translateX(-59px); }
+    .our_goal .inner .right_col li h3 span { margin-right: 20px; }
+    .our_goal .inner .right_col li .text { margin-top: 25px; }
+    .paid_ads_service .text_inner { margin-bottom: 80px; padding-bottom: 80px; }
+    .paid_ads_service .wrapper { padding: 80px 0; }
+    .email_marketing_service.email_marketing { padding: 80px 0 0; }
+    .email_marketing_service.email_marketing .wrapper{padding-bottom: 80px;}
+    .ads_comman_section { padding: 0 40px; }
+    .ads_comman_section  .wrapper{padding: 80px 0px;}
+    .extra_padding { padding: 120px 0px; }
+    #campaigns_growth.profitable_campaigns, #ecommerce.profitable_campaigns, #seo.profitable_campaigns,.our_goal,.paid_ads_service,.ads_comman_section.ads_comman_section_curve{border-radius:60px 60px 0px 0px;}
+    #profitable_campaigns_paid_ads { border-radius: 60px 60px 0px 0px; margin-top: -50px; padding-top: 220px; }
+    .other_services .wrapper { padding: 80px 40px; }
+    .other_services h2 { margin-bottom: 40px; }
+    .other_services .colin>img { max-width: 100px; }
+    .other_services .colin { height: 400px; padding: 25px 20px 40px; }
+    .other_services .colin .bg { padding: 25px 20px; }
+    .other_services .colin .img { width: calc(100% - 40px); }
+    .other_services .colin .bg>span img { max-width: 32px; margin-right: 10px; }
+    .other_services .colin .bg>span { font-size: 24px; }
+
+    .profitable_campaigns .animation_col .col { top: 90vh; }
+
+
+}
+@media only screen and (max-width:1023px){
+  a { font-size: 16px; }
+  h1 { font-size: 52px; line-height: 1.3; }
+  .brand { max-width: 100px; }
+  header nav>ul>li { margin: 0px 15px; }
+  .banner .text { max-width: 336px; }
+  .banner .circle { max-width: 160px; }
+  .banner_image { height: 400px; max-height: 400px; margin-top: -300px; }
+  .banner_image .bg { top: -120px; transform: scale3d(0.1, 0.08, 1); }
+  .affordable h2 { font-size: 35px; line-height: 100px; }
+  .social_media h2, .emailsec .left_col h2, .team_extension h2, .on_instagram .text_title h2, .trusted_by h2, .profitable_campaigns .left_col h2, .our_goal h2, .ads_comman_section h2, .paid_ads_service h2,.other_services h2 { font-size: 40px; line-height: 1.2; }
+  .on_instagram .text_title h2 { width: 100%; }
+  .on_instagram .text_title p { width: 100%; padding: 0; margin-top: 10px; }
+  #customers-testimonials .item .shadow-effect { padding: 10px 15px; }
+  #customers-testimonials .item .shadow-effect .video-container .video-content-top .video-con-img, #customers-testimonials .item .shadow-effect .video-container .video-test-bottom .video-bottom-img { gap: 7px; }
+  .video-con-img picture img { width: 30px; }
+  #customers-testimonials .video-con-img p{font-size: 12px;}
+  #customers-testimonials .item { width: calc(33.33% - 10px); }
+  .on_instagram.active #customers-testimonials .item:nth-child(2) { left: calc(33.33% + 10px); }
+  .on_instagram.active #customers-testimonials .item:nth-child(3) { left: calc(66.66% + 20px); }
+  #customers-testimonials .item .shadow-effect .video-container #video { height: 270px; padding: 10px 0; }
+  .video-test-bottom  .video-bottom-img picture img ,
+  .video-test-bottom  .video-bottom-img+div img{ width: 20px; }
+  #customers-testimonials, #customers-testimonials .item { height: 355px; }
+  #customers-testimonials .item .bg .bk_icon { left: 15px; top: 10px; width: 30px; }
+  .banchmarketing h2 { font-size: 65px; }
+  .social_media .right_col { width: 48%; padding-top: 162px; padding-right: 0; }
+  .emailsec .left_col { width: 100%; margin-bottom: 30px; }
+  .emailsec .right_col { width: 100%; }
+  .emailsec .wrapper { padding: 40px 30px; }
+  footer .top_footer p { width: 200px; font-size: 14px; line-height: 1.7 !important; }
+  footer .bottom_footer p{order: 2;text-align: center;width: 100%;}
+  footer .bottom_footer ul { width: 100%; justify-content: center; }
+  footer .bottom_footer ul li { padding: 0px 22px; margin-bottom: 10px; }
+  footer .bottom_footer .wrapper { padding: 20px 30px; }
+
+
+  .service_link { margin-top: -37px; }
+  .service_link .inner { padding: 12px 10px; }
+  .service_link .inner a { font-size: 20px; line-height: 50px; padding: 0px 10px; }
+  .service_link .inner a img { margin-right: 10px; max-width: 30px; }
+  .profitable_campaigns { margin-top: -37px; }
+  .profitable_campaigns .left_col h2 { word-wrap: break-word; }
+  .profitable_campaigns .left_col h2 br{display: none !important;}
+  .ads_link li a { font-size: 14px; line-height: 55px; padding: 0px 18px; }
+  .ads_link li+li { margin-left: -18px; }
+  .other_services .wrapper { padding: 60px 40px; }
+  .other_services .colin>span { font-size: 24px; line-height: 34px; }
+  .other_services .colin>img { max-width: 80px; }
+  .other_services .colin { height: 290px; padding: 25px 15px 30px; }
+  .other_services .colin .bg>span { font-size: 20px; }
+
+
+}
+header .navbar-toggler {display: none;}
+@media only screen and (max-width:767px){
+
+  header .navbar-toggler { width: 32px; height: 18px; position: relative; z-index: 999; display: none; cursor: pointer; background: transparent; border: none; display: block;position: absolute; right: 20px; top: 0; bottom: 0; margin: auto;}
+  header .navbar-toggler span { width: 100%; height: 2px; background-color: var(--off-white); position: absolute; left: 0; top: 0; bottom: 0; margin: auto; transition: 0.3s ease all; border-radius: 5px; -webkit-transition: 0.3s ease all; -moz-transition: 0.3s ease all; -ms-transition: 0.3s ease all; -o-transition: 0.3s ease all; }
+  header .navbar-toggler span:first-child { bottom: auto; }
+  header .navbar-toggler span:last-child { top: auto; }
+  header .navbar-toggler.active span:first-child { transform: rotate(45deg); bottom: 0; }
+  header .navbar-toggler.active span:nth-child(2) { opacity: 0; }
+  header .navbar-toggler.active span:last-child { transform: rotate(-45deg); top: 0; }
+
+
+  .wrapper { padding: 0px 20px; }
+  header,header.fixed { padding: 15px 0; }
+  header .btn{display: none;}
+  header nav{position: fixed;top: 0;width: 100%;height: 100%;background-color: var(--cool-Gray);z-index: 99;left: 0;transform: translateX(-100%);transition: 0.2s linear all;  display: block; padding-top: 70px;}
+ 
+  header nav>ul>li { margin: 0px 15px; width: 100%; border-bottom: 1px solid #fbf5e3; padding: 5px 0; }
+  header nav>ul>li span { top: 19px; right: 15px; }
+  header nav>ul>li span::after { top: -4px; }
+  header nav>ul>li>ul { position: relative; top: 0; padding: 10px 0px; border-radius: 20px; width: 100%; opacity:1; pointer-events: all; transition: none; background-color: transparent; left: 0; transform: translate3d(0, 0, 0);display: none; }
+  header nav>ul>li>ul>li>a { color: #fbf5e3; padding: 0 20px; line-height: 40px; }
+  header nav>ul>li>ul>li>a::after{content: '';position: absolute;left: 0;top: 0;width: 10px;height: 2px;background-color: #fbf5e3;bottom: 0;margin: auto;}
+  header nav>ul>li>ul::after{display: none;}
+  header nav>ul>li:hover span::after{opacity: 1;}
+  header nav>ul>li span.open::after { opacity: 0; }
+
+  header nav.active{transform: translateX(0);}
+  .banner {    padding-top: 220px;}
+  h1 { font-size: 35px; line-height: 1.3; }
+   .banner .circle { max-width: 120px;top: -130px; }
+   .banner .text { margin-top: 20px; }
+   .lets_talk ul li span { width: 40px; height: 40px; }
+   .lets_talk ul li+li { margin-left: -20px; }
+   .banner_image .bg { top: 0 !important; transform: scale(1) !important; border-radius: 10px !important; }
+   .marquee_plateform { padding: 25px 0 0; }
+   .marquee_plateform .marquee .item>span { font-size: 30px; line-height: 60px; }
+   .marquee_plateform .marquee .item>span>span { line-height: 45px; padding: 0px 18px; font-size: 20px; }
+   .marquee_plateform .wrapper { padding-bottom: 30px; }
+   .marquee_plateform .marquee_wrap{margin: 0px 0px 10px;}
+   .title { padding: 30px 0px; }
+   .title .icon_img img{max-width: 30px;}
+   .title h2 { font-size: 30px; line-height: 42px;margin-left: 12px; }
+   .title p { margin: 20px auto; }
+   .paid_ads .marquee .item { width: 160px; height: 160px; max-width: 160px; margin: 0px 5px;}
+   .paid_ads .marquee_rtl { margin-top: 10px; }
+   .paid_ads .wrapper { padding-bottom: 30px; }
+   .email_wrap { margin: 0px 0px; }
+   .email_wrap .imgWrap { height: 300px; width: 100%; margin-bottom: 20px; }
+   .email_marketing { padding-bottom: 10px; }
+  .team_extension { margin-top: 50px; border-radius: 40px 40px 0px 0px; }
+  .team_extension .col { padding: 60px 0 30px; max-width: 100%; }
+  .team_extension .wrapper { padding: 0 20px; }
+  .team_extension .b_brand { top: -40px; max-width: 90px; }
+  .team_extension p { padding-right: 0; }
+  .affordable  h2 { font-size: 15px; line-height: 50px; }
+  .team_extension .col { padding: 60px 0 190px; max-width: 100%; }
+  .lets_talk span { font-size: 16px; line-height: 1; margin-right: 10px; }
+  .team_extension .man { right: -50px; bottom: -13px; max-width: 240px; }
+  .affordable { margin-top: -25px; padding: 0px; }
+  .comman_sec { margin-top: -25px; }
+  .trusted_by  { padding: 50px 0px 0px; }
+  .trusted_by .col { width: calc(50% - 5px); height: 155px; }
+  .trusted_by .col .bg img{max-width: 100px;}
+  .banner_image { height: 250px; max-height: 250px; margin-top: 30px; }
+  #customers-testimonials, #customers-testimonials .item { height: auto; }
+  #customers-testimonials .item { position: relative; left: 0 !important; }
+  .on_instagram { position: relative; top: 0;     padding: 30px 0;}
+  .on_instagram .text_title { margin-bottom: 30px; opacity: 1; transition: 0.4s ease all; }
+  #customers-testimonials {flex-wrap: wrap;}
+  #customers-testimonials .item { width: 100% !important; }
+  #customers-testimonials .item:not(:last-child){margin-bottom: 20px;}
+  .social_media { padding:0px 0 40px !important; border-radius: 20px 20px 0px 0px; }
+  .social_media .left_col { width: 100%; }
+  .banchmarketing h2 { font-size: 35px; }
+
+
+  .social_media .right_col { width: 100%; padding-top: 0; padding-right: 0; margin-top: 20px; }
+  .emailsec { margin-top: 0; padding: 0px 0px; }
+  .emailsec .wrapper { padding: 30px 20px; border-radius: 20px; }
+  .emailsec .left_col h2 { margin-bottom: 15px; }
+  .emailsec .right_col .email { padding: 20px 20px; background-position: right 20px center; background-size: 30px; margin-bottom: 20px;}
+  .emailsec .right_col .email em { font-size: 18px; line-height: 10px; margin-bottom: 8px; }
+  .emailsec .right_col .email span { font-size: 15px; line-height: 18px; }
+  footer { padding-top: 60px; margin-top: -30px;border-radius: 0px; }
+  footer .top_footer p { width: 100%; font-size: 14px; line-height: 1.7 !important; order: 2;margin-bottom: 15px;}
+  footer .top_footer>ul>li:not(:last-child) { margin-bottom: 0; }
+  footer .top_footer>ul { width: 100%;order: 1; margin-bottom: 15px;}
+  footer .top_footer .let_blog { order: 3; width: 100%; }
+  footer .top_footer .let_blog .lets_talk { margin-bottom: 25.94px; margin: 0 auto; margin-bottom: 20px;  }
+  footer .bottom_footer .wrapper { padding: 15px 10px; }
+  footer .bottom_footer ul li { padding: 0px 7px; margin-bottom: 10px; }
+  footer .bottom_footer ul li:not(:last-child):after { width: 2px; right: 2.5px; }
+  footer .bottom_footer ul li:first-child{padding-left: 0px;}
+  footer .rr_footer{ margin-top: 20px; }
+  .banchmarketing h2 { transform: translateX(0); }
+  .social_media .bg { transform: scale3d(1, 1, 1); top: 0; margin-left: 0; z-index: 3; position: relative; height: 350px; border-radius: 10px; margin-bottom: 30px;        max-width: 100%; max-height: 100%; }
+
+  .inner_banner { padding: 100px 0 60px; }
+  .inner_banner h1 { margin-bottom: 0; }
+  .inner_banner .circle { right: 0; max-width: 130px; position: relative; top: 0; margin: 0 auto; margin-right: 0;    transform: translate3d(0, 0%, 0px);}
+  .inner_banner .wrapper{display: flex;flex-direction: column-reverse;}
+  .service_link { margin-top: 0; }
+  .service_link .inner { border-radius: 0; }
+  .service_link .inner a { font-size: 14px; line-height: 35px; padding: 0px 7px; }
+  .service_link .inner a img { margin-right: 8px; max-width: 24px; }
+  .profitable_campaigns { margin-top: 0; }
+  #campaigns_growth.profitable_campaigns, #ecommerce.profitable_campaigns, #seo.profitable_campaigns, .profitable_campaigns { padding: 40px 0 10px; }
+  .profitable_campaigns .left_col, #ecommerce.profitable_campaigns .left_col { max-width: 100%; }
+  .social_media h2, .emailsec .left_col h2, .team_extension h2, .on_instagram .text_title h2, .trusted_by h2, .profitable_campaigns .left_col h2, .our_goal h2, .ads_comman_section h2, .paid_ads_service h2,.other_services h2 { font-size: 32px; line-height: 1.2; }
+  .profitable_campaigns .left_col h2{margin-bottom: 15px;}
+  .profitable_campaigns .wrapper:first-child {flex-direction: column-reverse;margin-bottom: 20px;}
+  .profitable_campaigns .animation_col { width: 260px; height: 330px; margin-top: 0;margin-bottom: 40px; }
+  body .profitable_campaigns .animation_col .col{width: 100%;height: 100%; border-radius: 10px;opacity: 1;top: 0;}
+  body .profitable_campaigns .animation_col .col::after{opacity: 0;}
+  body .ads_link li{ margin-left: 0;margin-bottom: 10px; }
+  .ads_link li a { font-size: 13px; line-height: 42px; padding: 0px 12px; }
+  .profitable_campaigns .wrapper:nth-child(2n) { justify-content: center; }
+  .animations_title { margin-top: 10px; }
+  .profitable_campaigns .animation_col { width: 240px; height: 300px; margin-top: 0; display: block; margin: 0 auto; margin-bottom: 40px; }
+  .animations_title h2 { line-height: 60px; font-size: 50px; }
+  .our_goal, .paid_ads_service, .ads_comman_section.ads_comman_section_curve { margin-top: -33px; padding: 0 20px; }
+  #campaigns_growth.profitable_campaigns, #ecommerce.profitable_campaigns, #seo.profitable_campaigns, .our_goal, .paid_ads_service, .ads_comman_section.ads_comman_section_curve { border-radius: 30px 30px 0px 0px; }
+  .our_goal .wrapper { padding: 40px 0 40px; }
+  .our_goal h2 { margin-bottom: 20px; }
+  .our_goal .inner .left_col { width: 100%; }
+  .our_goal .inner label { font-size: 18px; line-height: 30px; margin-bottom: 30px; }
+  .our_goal .inner .img { height: 190px; }
+  .our_goal .inner .right_col { width: 100%; margin-top: 20px; }
+  .our_goal .inner .right_col li h3 span::after { width: 10px; height: 34px; }
+  .our_goal .inner .right_col li h3 { font-size: 24px; line-height: 40px; transform: translateX(-37px);    white-space: nowrap; }
+  .our_goal .inner .right_col li { padding: 10px 0; }
+  .our_goal .inner .right_col li h3 span { margin-right: 10px; }
+  .our_goal .btn_col { margin-top: 40px; }
+  .ads_comman_section { padding: 0 20px; }
+  .ads_comman_section .wrapper { padding: 40px 0px; }
+  .ads_comman_section h2 { margin-bottom: 10px; }
+  .ads_comman_section .colin:first-child { margin-bottom: 20px; }
+  .ads_comman_section .btn_col { margin-top: 30px; }
+  .paid_ads_service .wrapper { padding: 40px 0; }
+  .paid_ads_service h2{margin-bottom: 20px;}
+  .paid_ads_service .text_inner { margin-bottom: 40px; padding-bottom: 40px; }
+  .email_marketing_service.email_marketing { padding: 40px 0 0; }
+  .email_marketing_service.email_marketing .wrapper { padding-bottom: 20px; }
+  .extra_padding { padding: 0; }
+  #profitable_campaigns_paid_ads { border-radius: 30px 30px 0px 0px; margin-top: -23px; padding-top: 60px; }
+  .other_services .wrapper { padding: 40px 20px 20px; }
+  .other_services h2 { margin-bottom: 30px; }
+  .other_services .colin { height: 290px; padding: 25px 20px 30px; width: 100%; margin-bottom: 20px; }
+  .other_services .colin:hover { transform: scale(1.01); }
+  .other_services .colin .img { width: 100%; max-width: 200px; }
+  .thankyou_title {font-size: 100px;}
+
+  .section_404 .no_flex_wrap{flex-wrap: wrap;gap: 20px;}
+  .title_404 {font-size: 500px;}
+  .section_404_inner h2 {width: auto;}
+  .section_404_inner {padding: 50px 20px;}
+
+
+}
