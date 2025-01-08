@@ -29,9 +29,9 @@
   #campaigns_growth.profitable_campaigns, #ecommerce.profitable_campaigns, #seo.profitable_campaigns , .profitable_campaigns { padding: 250px 0 100px; }
   .other_services .colin>span { font-size: 45px; line-height: 50px;}
   .other_services .colin>img{max-width: 150px;}
-
-
+  .comman_sec .inner { gap: 16px; }
 }
+
 @media only screen and (max-width:1599px){
   .wrapper { max-width: 1300px; }
   .banchmarketing h2 { font-size: 122px; }
@@ -69,10 +69,9 @@
   .top_footer p { width: 33%; font-size: 24px; }
 
   .service_link .inner a:not(:last-child) { margin-right: 20px; }
-
-
-
+  .comman_sec .inner { gap: 14px; }
 }
+
 @media only screen and (max-width:1399px){
   .wrapper { max-width:1200px; }
   .brand{max-width: 130px;}
@@ -105,7 +104,8 @@
   .other_services .colin>span { font-size: 35px; line-height: 40px; }
   .other_services .colin .bg { padding: 25px 30px; }
 
-
+  .comman_sec .inner{gap: 12px;}
+  .animations_title h2{font-size: 135px;}
 
 }
 @media only screen and (max-width:1279px){
@@ -193,9 +193,8 @@
     .other_services .colin .bg>span { font-size: 24px; }
 
     .profitable_campaigns .animation_col .col { top: 90vh; }
-
-
 }
+
 @media only screen and (max-width:1023px){
   a { font-size: 16px; }
   h1 { font-size: 52px; line-height: 1.3; }
@@ -216,7 +215,7 @@
   #customers-testimonials .item { width: calc(33.33% - 10px); }
   .on_instagram.active #customers-testimonials .item:nth-child(2) { left: calc(33.33% + 10px); }
   .on_instagram.active #customers-testimonials .item:nth-child(3) { left: calc(66.66% + 20px); }
-  #customers-testimonials .item .shadow-effect .video-container #video { height: 270px; padding: 10px 0; }
+  #customers-testimonials .item .shadow-effect .video-container #video { height: 350px; padding: 10px 0; }
   .video-test-bottom  .video-bottom-img picture img ,
   .video-test-bottom  .video-bottom-img+div img{ width: 20px; }
   #customers-testimonials, #customers-testimonials .item { height: 355px; }
@@ -247,12 +246,12 @@
   .other_services .colin>img { max-width: 80px; }
   .other_services .colin { height: 290px; padding: 25px 15px 30px; }
   .other_services .colin .bg>span { font-size: 20px; }
-
-
+  .comman_sec .inner { gap: 11px; }
 }
-header .navbar-toggler {display: none;}
-@media only screen and (max-width:767px){
 
+header .navbar-toggler {display: none;}
+
+@media only screen and (max-width:767px){
   header .navbar-toggler { width: 32px; height: 18px; position: relative; z-index: 999; display: none; cursor: pointer; background: transparent; border: none; display: block;position: absolute; right: 20px; top: 0; bottom: 0; margin: auto;}
   header .navbar-toggler span { width: 100%; height: 2px; background-color: var(--off-white); position: absolute; left: 0; top: 0; bottom: 0; margin: auto; transition: 0.3s ease all; border-radius: 5px; -webkit-transition: 0.3s ease all; -moz-transition: 0.3s ease all; -ms-transition: 0.3s ease all; -o-transition: 0.3s ease all; }
   header .navbar-toggler span:first-child { bottom: auto; }
@@ -302,7 +301,10 @@ header .navbar-toggler {display: none;}
    .email_marketing { padding-bottom: 10px; }
   .team_extension { margin-top: 50px; border-radius: 40px 40px 0px 0px; }
   .team_extension .col { padding: 60px 0 30px; max-width: 100%; }
-  .team_extension .wrapper { padding: 0 20px; }
+  .team_extension .wrapper { padding: 0 20px; display: block;}
+  .team_extension .wrapper .col-right {position: absolute;z-index: 0;right: -50px;bottom: -13px;max-width: 240px;height: auto;}
+  .team_extension .wrapper .col {z-index: 1;}
+  .team_extension_men {height: auto;}
   .team_extension .b_brand { top: -40px; max-width: 90px; }
   .team_extension p { padding-right: 0; }
   .affordable  h2 { font-size: 15px; line-height: 50px; }
@@ -324,9 +326,7 @@ header .navbar-toggler {display: none;}
   #customers-testimonials .item:not(:last-child){margin-bottom: 20px;}
   .social_media { padding:0px 0 40px !important; border-radius: 20px 20px 0px 0px; }
   .social_media .left_col { width: 100%; }
-  .banchmarketing h2 { font-size: 35px; }
-
-
+  .banchmarketing h2 { font-size: 30px; }
   .social_media .right_col { width: 100%; padding-top: 0; padding-right: 0; margin-top: 20px; }
   .emailsec { margin-top: 0; padding: 0px 0px; }
   .emailsec .wrapper { padding: 30px 20px; border-radius: 20px; }
@@ -347,8 +347,8 @@ header .navbar-toggler {display: none;}
   footer .rr_footer{ margin-top: 20px; }
   .banchmarketing h2 { transform: translateX(0); }
   .social_media .bg { transform: scale3d(1, 1, 1); top: 0; margin-left: 0; z-index: 3; position: relative; height: 350px; border-radius: 10px; margin-bottom: 30px;        max-width: 100%; max-height: 100%; }
-
   .inner_banner { padding: 100px 0 60px; }
+  .inner_banner .col {width: 100%;}
   .inner_banner h1 { margin-bottom: 0; }
   .inner_banner .circle { right: 0; max-width: 130px; position: relative; top: 0; margin: 0 auto; margin-right: 0;    transform: translate3d(0, 0%, 0px);}
   .inner_banner .wrapper{display: flex;flex-direction: column-reverse;}
@@ -370,7 +370,7 @@ header .navbar-toggler {display: none;}
   .profitable_campaigns .wrapper:nth-child(2n) { justify-content: center; }
   .animations_title { margin-top: 10px; }
   .profitable_campaigns .animation_col { width: 240px; height: 300px; margin-top: 0; display: block; margin: 0 auto; margin-bottom: 40px; }
-  .animations_title h2 { line-height: 60px; font-size: 50px; }
+  .animations_title h2 { line-height: 60px; font-size: 45px; }
   .our_goal, .paid_ads_service, .ads_comman_section.ads_comman_section_curve { margin-top: -33px; padding: 0 20px; }
   #campaigns_growth.profitable_campaigns, #ecommerce.profitable_campaigns, #seo.profitable_campaigns, .our_goal, .paid_ads_service, .ads_comman_section.ads_comman_section_curve { border-radius: 30px 30px 0px 0px; }
   .our_goal .wrapper { padding: 40px 0 40px; }
@@ -402,9 +402,14 @@ header .navbar-toggler {display: none;}
   .other_services .colin:hover { transform: scale(1.01); }
   .other_services .colin .img { width: 100%; max-width: 200px; }
   .thankyou_title {font-size: 100px;}
-
   .section_404 .no_flex_wrap{flex-wrap: wrap;gap: 20px;}
   .title_404 {font-size: 500px;}
   .section_404_inner h2 {width: auto;}
   .section_404_inner {padding: 50px 20px;}
+  .comman_sec .inner { gap: 10px; }
+  .banner .circle .circle_icon {width: 120px;height: 120px;}
+  .banner .circle .circle_text {width: 120px;height: 120px;object-fit: contain;}
+  .inner_banner .circle .circle_icon {width: 120px;height: 120px;}
+  .inner_banner .circle .circle_text {width: 120px;height: 120px;object-fit: contain;}
+  footer .bg {background-position: 0 80%;}
 }

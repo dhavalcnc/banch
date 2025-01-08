@@ -18,57 +18,66 @@ jQuery(document).ready(function($){
 
   // Click event handler
   $rightColItems.find('h3').click(function () {
-    const $this = $(this);
+  const $this = $(this);
 
-    // If the clicked item is already active, do nothing
-    if ($this.hasClass('active')) return;
+  // If the clicked item is already active, do nothing
+  if ($this.hasClass('active')) return;
 
-    // Remove active class and slide up all text elements
-    $rightColItems.find('h3').removeClass('active');
-    $rightColItems.find('.text').slideUp();
+  // Remove active class and slide up all text elements
+  $rightColItems.find('h3').removeClass('active');
+  $rightColItems.find('.text').slideUp();
 
-    // Add active class to clicked element and slide down the corresponding text
-    $this.addClass('active');
-    $this.next('.text').slideDown();
+  // Add active class to clicked element and slide down the corresponding text
+  $this.addClass('active');
+  $this.next('.text').slideDown();
+});
+
+  $('header ul li a,footer .bottom_footer ul li a').each(function() {
+    var _this = $(this); // Store the jQuery object
+    var currentWidth = _this.width(); // Get the width of the element
+    console.log(currentWidth);
+    var newWidth = currentWidth + 6; // Add 5 to the current width
+    _this.css('width', newWidth + 'px'); // Set the new width
   });
 
-  // $('.our_goal .inner .right_col li:first-child h3').addClass('active');
-  // $('.our_goal .inner .right_col li:first-child .text').slideDown();
-  //   $('.our_goal .inner .right_col li h3').click(function(){
-  //     var _this = $(this);
-  //     $('.our_goal .inner .right_col li h3').removeClass('active');
-  //     $('.our_goal .inner .right_col li .text').slideUp();
-  //     _this.addClass('active');
-  //     _this.next().slideDown();
+  // let lastScrollTop = 0; // Keep track of the last scroll position
 
-  //   });
+  // $(window).on("scroll", function () {
+  //   let currentScroll = $(this).scrollTop(); // Get the current scroll position
 
-    $('header ul li a,footer .bottom_footer ul li a').each(function() {
-      var _this = $(this); // Store the jQuery object
-      var currentWidth = _this.width(); // Get the width of the element
-      console.log(currentWidth);
-      var newWidth = currentWidth + 6; // Add 5 to the current width
-      _this.css('width', newWidth + 'px'); // Set the new width
+  //   if (currentScroll > lastScrollTop) {
+  //     // Scrolling down
+  //     $("header").addClass("hidden");
+  //   } else {
+  //     // Scrolling up
+  //     $("header").removeClass("hidden");
+  //   }
+
+  //   lastScrollTop = currentScroll; // Update the last scroll position
+  // });
+
+  let lastScrollTop = 0;
+
+  $(window).on("scroll", function () {
+    let currentScroll = $(this).scrollTop(); // Get the current scroll position
+  
+    if (currentScroll <= 0) {
+      // If scrolled to the very top
+      $("header").removeClass("hidden");
+    } else if (currentScroll > lastScrollTop && currentScroll > 50) {
+      // Scrolling down and scrolled at least 50px
+      $("header").addClass("hidden");
+    } else {
+      // Scrolling up
+      $("header").removeClass("hidden");
+    }
+  
+    lastScrollTop = currentScroll; // Update the last scroll position
   });
+  
 
-  let lastScrollTop = 0; // Keep track of the last scroll position
-
-      $(window).on("scroll", function () {
-        let currentScroll = $(this).scrollTop(); // Get the current scroll position
-
-        if (currentScroll > lastScrollTop) {
-          // Scrolling down
-          $("header").addClass("hidden");
-        } else {
-          // Scrolling up
-          $("header").removeClass("hidden");
-        }
-
-        lastScrollTop = currentScroll; // Update the last scroll position
-      });
-
-$('header ul li.menu-item-has-children>a').after('<span></span>');
-  if($(window).width() < 767 ){
+  $('header ul li.menu-item-has-children>a').after('<span></span>');
+   if($(window).width() < 767 ){
     $('header nav>ul>li span').click(function(){
       $(this).toggleClass('open');
       $(this).next().slideToggle();
@@ -106,37 +115,38 @@ $('header ul li.menu-item-has-children>a').after('<span></span>');
             }
           }        
       });
-  });
+    });
 /* megnify */
 
-(function($)
- {
-  $.fn.visible = function(partial) {
+  (function($)
+  {
+    $.fn.visible = function(partial) {
 
-      var $t            = $(this),
-          $w            = $(window),
-          viewTop       = $w.scrollTop(),
-          viewBottom    = viewTop + $w.height(),
-          _top          = $t.offset().top,
-          bottom       = _top + $t.height(),
-          compareTop    = partial === true ? bottom : _top,
-          compareBottom = partial === true ? _top : bottom;
+        var $t            = $(this),
+            $w            = $(window),
+            viewTop       = $w.scrollTop(),
+            viewBottom    = viewTop + $w.height(),
+            _top          = $t.offset().top,
+            bottom       = _top + $t.height(),
+            compareTop    = partial === true ? bottom : _top,
+            compareBottom = partial === true ? _top : bottom;
 
-      return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
-  };
-})(jQuery);
-var win = $(window);
-var allMods = $(".animation_sec,.rr_footer,footer");
-win.scroll(function(event) {
-  allMods.each(function(i, el) {
-      var el = $(el);
-      if (el.visible(true)) {
-          setTimeout(function(){
-              el.addClass("come-in"); 
-          },i*50);
-      } 
+        return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
+    };
+  })(jQuery);
+
+  var win = $(window);
+  var allMods = $(".animation_sec,.rr_footer,footer");
+  win.scroll(function(event) {
+    allMods.each(function(i, el) {
+        var el = $(el);
+        if (el.visible(true)) {
+            setTimeout(function(){
+                el.addClass("come-in"); 
+            },i*50);
+        } 
+    });
   });
-});
 
  // Function to pause all videos
     function pauseAllVideos() {
@@ -170,36 +180,36 @@ win.scroll(function(event) {
       $(this).hide(); // Hide the pause icon
       $(this).siblings('.play-icon').show(); // Show the play icon
     });
+  });
 
-});
+  (function($) {
+    $(window).scroll(function () {
+    var sticky = $('header'),
+        scroll = $(window).scrollTop();
 
-$(window).scroll(function(){
-  var sticky = $('header'),
-      scroll = $(window).scrollTop();
+    if (scroll >= 50) sticky.addClass('fixed');
+    else sticky.removeClass('fixed');
+  });
 
-  if (scroll >= 50) sticky.addClass('fixed');
-  else sticky.removeClass('fixed');
-});
+  if($(window).width() > 767){
 
-if($(window).width() > 767){
-
-/* banner aniamtion */
-gsap.registerPlugin(ScrollTrigger);
-let scrollDistance3 = 370;
-const circlezoom = gsap.timeline({
-  scrollTrigger: {  
-    trigger: ".banner_image", 
-    scrub: 0.1, 
-    pin: true, 
-    
-    //start: "top-=65% top+=20%", // Start at top
-    start: "top top+=50%",
-    end: `+=${scrollDistance3}`,
-    //end: "bottom top+=80%", // End when bottom hits top
-    //markers: true, // Debug markers
-    pinSpacing: true, // Pin with accurate spacing
-  }
-});
+  /* banner aniamtion */
+  gsap.registerPlugin(ScrollTrigger);
+  let scrollDistance3 = 370;
+  const circlezoom = gsap.timeline({
+    scrollTrigger: {  
+      trigger: ".banner_image", 
+      scrub: 0.1, 
+      pin: true, 
+      
+      //start: "top-=65% top+=20%", // Start at top
+      start: "top top+=50%",
+      end: `+=${scrollDistance3}`,
+      //end: "bottom top+=80%", // End when bottom hits top
+      //markers: true, // Debug markers
+      pinSpacing: true, // Pin with accurate spacing
+    }
+  });
 
 circlezoom.to(".banner_image .bg", {
   top: "0%",          
@@ -235,6 +245,12 @@ const circlezoom1 = gsap.timeline({
         document.querySelector(".on_instagram").classList.add("open");
       }else{
         document.querySelector(".on_instagram").classList.remove("open");
+      }
+
+      if (progress >= 1) { 
+        document.querySelector(".comman_sec").classList.add("active");
+      }else{
+        document.querySelector(".comman_sec").classList.remove("active");
       }
     }
   }
@@ -297,232 +313,140 @@ circlezoom4.to(".banchmarketing h2", {
 }
 
 
-// profitable_campaigns 
-  // if ($('.profitable_campaigns').length > 0) {
+if ($('.profitable_campaigns').length > 0) {
+  gsap.registerPlugin(ScrollTrigger);
 
-  //   gsap.registerPlugin(ScrollTrigger);
+  const scrollDistance11 = 800;
 
-  //   const scrollDistance11 = 800;
+  // Loop through each `.profitable_campaigns` section
+  $('.profitable_campaigns').each(function (index, section) {
+    const $section = $(this); // Current section
+    const sectionId = $section.attr('id'); // Get the ID of the section (optional)
+    console.log(sectionId);
+    if($('#'+sectionId + ' .animation_col .col').length > 1){
 
-  //   // Create a timeline for sequential animations
-  //   const animationTimeline = gsap.timeline({
-  //     scrollTrigger: {
-  //       trigger: ".profitable_campaigns", // Trigger animation when `.profitable_campaigns` enters the viewport
-  //       start: "top top", // Start when the section reaches the top of the viewport
-  //       end: `+=${scrollDistance11}`, // Animation duration
-  //       scrub: true, // Smooth scrolling animations
-  //       pin: true, // Pin the section during animations
-  //      // markers: true, // Enable debugging markers (remove in production)
-  //     },
-  //   });
+    // Create a timeline for each section
+    const animationTimeline = gsap.timeline({
+      scrollTrigger: {
+        trigger: '#'+sectionId, // Trigger animation for the current section
+        start: "top top", // Start when the section reaches the top of the viewport
+        end: `+=${scrollDistance11}`, // Animation duration
+        scrub: true, // Smooth scrolling animations
+        pin: true, // Pin the section during animations
+        //markers: true, // Enable debugging markers (remove in production)
+      },
+    });
 
-  //   // Sequential animations for the `.col` elements
-  //   animationTimeline
-  //     .to(".profitable_campaigns .col1", { 
-  //       top: 0, 
-  //       ease: "power1.out", 
-  //       duration: 0.5, 
-  //       onComplete: () => {
-  //         const col1 = document.querySelector(".profitable_campaigns .col1");
-  //         col1.classList.add("active");
+    // Sequential animations for the `.col` elements in the current section
+    animationTimeline
+      .to(`${'#'+sectionId} .col1`, { 
+        top: 0, 
+        ease: "power1.out", 
+        duration: 0.5, 
+        onComplete: () => {
+          const col1 = document.querySelector(`${'#'+sectionId} .col1`);
+          col1.classList.add("active");
 
-  //         // Add `open` class after a slight delay
-  //         setTimeout(() => {
-  //           col1.classList.add("open");
-  //         }, 200);
-  //       },
-  //       onReverseComplete: () => {
-  //         const col1 = document.querySelector(".profitable_campaigns .col1");
-
-  //         // Move back to `top: 500px` before removing classes
-  //         gsap.to(col1, {
-  //           top: "120%",
-  //           duration: 0.5,
-  //           onComplete: () => {
-  //             col1.classList.remove("open");
-  //             col1.classList.remove("active");
-  //           },
-  //         });
-  //       },
-  //     })
-  //     .to(
-  //       ".profitable_campaigns .col2", 
-  //       { 
-  //         top: 0, 
-  //         ease: "power1.out", 
-  //         duration: 0.5, 
-  //         onComplete: () => {
-  //           const col2 = document.querySelector(".profitable_campaigns .col2");
-  //           col2.classList.add("active");
-
-  //           setTimeout(() => {
-  //             col2.classList.add("open");
-  //           }, 200);
-  //         },
-  //         onReverseComplete: () => {
-  //           const col2 = document.querySelector(".profitable_campaigns .col2");
-
-  //           // Move back to `top: 500px` before removing classes
-  //           gsap.to(col2, {
-  //             top: "120%",
-  //             duration: 0.5,
-  //             onComplete: () => {
-  //               col2.classList.remove("open");
-  //               col2.classList.remove("active");
-  //             },
-  //           });
-  //         },
-  //       },
-  //       "+=0.5"
-  //     )
-  //     .to(
-  //       ".profitable_campaigns .col3", 
-  //       { 
-  //         top: 0, 
-  //         ease: "power1.out", 
-  //         duration: 0.5, 
-  //         onComplete: () => {
-  //           const col3 = document.querySelector(".profitable_campaigns .col3");
-  //           col3.classList.add("active");
-  //           setTimeout(() => {
-  //             col3.classList.add("open");
-  //           }, 200);
-  //         },
-  //         onReverseComplete: () => {
-  //           const col3 = document.querySelector(".profitable_campaigns .col3");
-
-  //           // Move back to `top: 500px` before removing classes
-  //           gsap.to(col3, {
-  //             top: "120%",
-  //             duration: 0.5,
-  //             onComplete: () => {
-  //               col3.classList.remove("open");
-  //               col3.classList.remove("active");
-  //             },
-  //           });
-  //         },
-  //       },
-  //       "+=0.5"
-  //     );
-  // }
-
-  if ($('.profitable_campaigns').length > 0) {
-    gsap.registerPlugin(ScrollTrigger);
-  
-    const scrollDistance11 = 800;
-  
-    // Loop through each `.profitable_campaigns` section
-    $('.profitable_campaigns').each(function (index, section) {
-      const $section = $(this); // Current section
-      const sectionId = $section.attr('id'); // Get the ID of the section (optional)
-      console.log(sectionId);
-      if($('#'+sectionId + ' .animation_col .col').length > 1){
-
-      // Create a timeline for each section
-      const animationTimeline = gsap.timeline({
-        scrollTrigger: {
-          trigger: '#'+sectionId, // Trigger animation for the current section
-          start: "top top", // Start when the section reaches the top of the viewport
-          end: `+=${scrollDistance11}`, // Animation duration
-          scrub: true, // Smooth scrolling animations
-          pin: true, // Pin the section during animations
-          // markers: true, // Enable debugging markers (remove in production)
+          setTimeout(() => {
+            col1.classList.add("open");
+          }, 200);
         },
-      });
-  
-      // Sequential animations for the `.col` elements in the current section
-      animationTimeline
-        .to(`${'#'+sectionId} .col1`, { 
+        onReverseComplete: () => {
+          const col1 = document.querySelector(`${'#'+sectionId} .col1`);
+          gsap.to(col1, {
+            top: "250%",
+            duration: 0.5,
+            onComplete: () => {
+              col1.classList.remove("open");
+              col1.classList.remove("active");
+            },
+          });
+        },
+      })
+      .to(
+        `${'#'+sectionId} .col2`, 
+        { 
           top: 0, 
           ease: "power1.out", 
           duration: 0.5, 
           onComplete: () => {
-            const col1 = document.querySelector(`${'#'+sectionId} .col1`);
-            col1.classList.add("active");
-  
+            const col2 = document.querySelector(`${'#'+sectionId} .col2`);
+            col2.classList.add("active");
+
             setTimeout(() => {
-              col1.classList.add("open");
+              col2.classList.add("open");
             }, 200);
           },
           onReverseComplete: () => {
-            const col1 = document.querySelector(`${'#'+sectionId} .col1`);
-            gsap.to(col1, {
-              top: "120%",
+            const col2 = document.querySelector(`${'#'+sectionId} .col2`);
+            gsap.to(col2, {
+              top: "250%",
               duration: 0.5,
               onComplete: () => {
-                col1.classList.remove("open");
-                col1.classList.remove("active");
+                col2.classList.remove("open");
+                col2.classList.remove("active");
               },
             });
           },
-        })
-        .to(
-          `${'#'+sectionId} .col2`, 
-          { 
-            top: 0, 
-            ease: "power1.out", 
-            duration: 0.5, 
-            onComplete: () => {
-              const col2 = document.querySelector(`${'#'+sectionId} .col2`);
-              col2.classList.add("active");
-  
-              setTimeout(() => {
-                col2.classList.add("open");
-              }, 200);
-            },
-            onReverseComplete: () => {
-              const col2 = document.querySelector(`${'#'+sectionId} .col2`);
-              gsap.to(col2, {
-                top: "120%",
-                duration: 0.5,
-                onComplete: () => {
-                  col2.classList.remove("open");
-                  col2.classList.remove("active");
-                },
-              });
-            },
+        },
+        "+=0.5"
+      )
+      .to(
+        `${'#'+sectionId} .col3`, 
+        { 
+          top: 0, 
+          ease: "power1.out", 
+          duration: 0.5, 
+          onComplete: () => {
+            const col3 = document.querySelector(`${'#'+sectionId} .col3`);
+            col3.classList.add("active");
+
+            setTimeout(() => {
+              col3.classList.add("open");
+            }, 200);
           },
-          "+=0.5"
-        )
-        .to(
-          `${'#'+sectionId} .col3`, 
-          { 
-            top: 0, 
-            ease: "power1.out", 
-            duration: 0.5, 
-            onComplete: () => {
-              const col3 = document.querySelector(`${'#'+sectionId} .col3`);
-              col3.classList.add("active");
-  
-              setTimeout(() => {
-                col3.classList.add("open");
-              }, 200);
-            },
-            onReverseComplete: () => {
-              const col3 = document.querySelector(`${'#'+sectionId} .col3`);
-              gsap.to(col3, {
-                top: "120%",
-                duration: 0.5,
-                onComplete: () => {
-                  col3.classList.remove("open");
-                  col3.classList.remove("active");
-                },
-              });
-            },
+          onReverseComplete: () => {
+            const col3 = document.querySelector(`${'#'+sectionId} .col3`);
+            gsap.to(col3, {
+              top: "250%",
+              duration: 0.5,
+              onComplete: () => {
+                col3.classList.remove("open");
+                col3.classList.remove("active");
+              },
+            });
           },
-          "+=0.5"
-        );
-
-      }
-
-    });
-
-
-
-
-  }
-  
-
-
+        },
+        "+=0.5"
+      );
+    }
+  });
 }
+}
+})(jQuery);
 
+
+document.addEventListener("DOMContentLoaded", function () {
+  const onInstagramSection = document.querySelector(".on_instagram");
+  const commanSecSection = document.querySelector(".comman_sec");
+
+  if (onInstagramSection && commanSecSection) {
+    window.addEventListener("scroll", function () {
+      const rect = onInstagramSection.getBoundingClientRect();
+      const viewportHeight = window.innerHeight;
+
+      // Check if .on_instagram is in the viewport
+      if (rect.top < viewportHeight && rect.bottom > 0) {
+        // .on_instagram is in the viewport, add class to both sections
+        commanSecSection.classList.add("active");
+        onInstagramSection.classList.add("active");
+        onInstagramSection.classList.add("open");
+      } else {
+        // .on_instagram is out of the viewport, remove class from both sections
+        commanSecSection.classList.remove("active");
+        onInstagramSection.classList.remove("active");
+        onInstagramSection.classList.remove("open");
+      }
+    });
+  }
+});
