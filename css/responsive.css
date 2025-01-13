@@ -412,4 +412,11 @@ header .navbar-toggler {display: none;}
   .inner_banner .circle .circle_icon {width: 120px;height: 120px;}
   .inner_banner .circle .circle_text {width: 120px;height: 120px;object-fit: contain;}
   footer .bg {background-position: 0 80%;}
+  .form_row .inner_row {flex-direction: column;}
+  .form_row h2 {font-size: 30px;margin-top: 50px;margin-bottom: 20px;}
+  .form_row .inner_row .inner_col .form_input {width: calc(100% - 40px);padding: 15px 20px;height: auto;}
+  .form_row .inner_row .inner_col label {width: calc(100% - 40px);word-wrap: break-word;}
+  .form_row .inner_row .inner_col .wpcf7-list-item label {column-gap: 20px;}
+  .form_row .inner_row .inner_col .form_group .form_group_inner p {flex-direction: column;}
+  .form_row .inner_row .inner_col .form_group .form_group_inner p>span:after {right: 65px;}
 }
