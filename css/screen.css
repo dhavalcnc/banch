@@ -655,8 +655,14 @@ span.wpcf7-not-valid-tip {font-size: 15px;line-height: 15px;color: #ff0000;font-
 .casestudy_title_div {display: flex;align-items: end;gap: 30px;}
 .casestudy_list_section .casestudy_list .casestudy_title_div .casestudy_title {font-size: 90px;font-style: normal;font-weight: 500;line-height: 0.7;text-transform: uppercase;}
 .casestudy_list_section .casestudy_list .casestudy_cols {display: flex;gap: 50px;}
-.casestudy_list_section .casestudy_list .casestudy_cols .left_col,.casestudy_list_section .casestudy_list .casestudy_cols .right_col {width: 50%;}
+.casestudy_list_section .casestudy_list .casestudy_cols .left_col{width: 40%;}
+.casestudy_list_section .casestudy_list .casestudy_cols .space_col{width: 10%;}
+.casestudy_list_section .casestudy_list .casestudy_cols .right_col {width: 50%;}
 .casestudy_list_section .casestudy_list .wrapper {display: flex;width: 100%;flex-direction: column;gap: 80px;}
+.casestudy_btn{margin-top: 40px;}
+.casestudy_links ul {list-style: none;display: flex;gap: 90px;}
+.casestudy_links ul li {display: flex;align-items: center;gap: 15px;}
+.casestudy_links ul li a {color: #3E4959;text-decoration: underline;}
 
 
 @media (prefers-reduced-motion: reduce) {
