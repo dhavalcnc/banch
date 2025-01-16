@@ -665,6 +665,20 @@ span.wpcf7-not-valid-tip {font-size: 15px;line-height: 15px;color: #ff0000;font-
 .casestudy_links ul li a {color: #3E4959;text-decoration: underline;}
 
 
+.common-page{background-color: var(--off-white); padding: 284px 0 120px; height: 100%; margin-bottom: -50px;}
+.common-page h1{color: #3F4A5A; padding-bottom: 44px; margin-bottom: 50px; border-bottom: 1px solid #3F4A5A;}
+.common-page a{color: #3E4959;}
+
+.sitemap-list{padding-top: 12px;}
+.sitemap-list ul{list-style: none; margin: 0; padding: 0;}
+.sitemap-list > ul > li{padding: 62px; border-bottom: 1px solid #B5B5B5;}
+.sitemap-list > ul > li > a{font-size: 36px; font-weight: 600;}
+.sitemap-list > ul > li:first-child{padding-top: 0;}
+.sitemap-list > ul > li > ul{margin-left: 330px;}
+.sitemap-list > ul > li > ul >li{padding-top: 50px;}
+.sitemap-list > ul > li > ul > li > a{font-size: 32px; font-weight: 500;}
+
+
 @media (prefers-reduced-motion: reduce) {
   .marquee__group {
     animation-play-state: paused;
