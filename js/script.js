@@ -511,3 +511,18 @@ circlezoom4.to(".banchmarketing h2", {
   x: 0, // Moves up by 150px
   ease: "none",
 });
+
+if($('.casestudySlider').length > 0){
+  const casestudySlider = new Swiper(".casestudySlider", {
+    effect: "cards",
+    grabCursor: true,
+    centeredSlides: true,
+    keyboard: {
+      enabled: true
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+}

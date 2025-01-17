@@ -44,7 +44,7 @@ blockquote, q {quotes: none;}
 br {height: 0;}
 ul, ol, dl, li {margin:0; padding:0;  color: #555555; font-size: 14px; line-height: 24px;}
 html, body{height: 100%; -webkit-appearance:none; border:none; -webkit-text-size-adjust:none;}
-body{position:relative;}
+body{position:relative;font-family: var(--Poppins);}
 
 /* Class for clearing floats */
 .clear {clear:both; display:block; overflow:hidden; visibility:hidden; width:0; height:0;}
@@ -650,19 +650,37 @@ span.wpcf7-not-valid-tip {font-size: 15px;line-height: 15px;color: #ff0000;font-
 .casestudy_instagram .text_title h2 {font-size: 90px;line-height: 63px;text-transform: uppercase;width: 731px;}
 .casestudy_instagram .text_title {margin-bottom: 67px;opacity: 0;transition: 0.4s ease all}
 .casestudy_instagram.open .text_title {opacity: 1;}
-.casestudy_list {border-radius: 90px 90px 0px 0px;background: #ffffff;padding: 120px 0 350px 0;}
+.casestudy_list {border-radius: 90px 90px 0px 0px;background: #ffffff;padding: 120px 0 120px 0;}
+.casestudy_list:nth-child(even){background-color: var(--off-white);}
+.casestudy_list:last-child{padding-bottom: 240px;}
 .casestudy_list_section {margin-top: -60px;z-index: 9;position: relative;}
-.casestudy_title_div {display: flex;align-items: end;gap: 30px;}
+.casestudy_title_div {display: flex;align-items: end;gap: 30px; padding-bottom: 110px;}
 .casestudy_list_section .casestudy_list .casestudy_title_div .casestudy_title {font-size: 90px;font-style: normal;font-weight: 500;line-height: 0.7;text-transform: uppercase;}
 .casestudy_list_section .casestudy_list .casestudy_cols {display: flex;gap: 50px;}
-.casestudy_list_section .casestudy_list .casestudy_cols .left_col{width: 40%;}
+.casestudy_list_section .casestudy_list .casestudy_cols .left_col{width: 48%; position: relative;}
 .casestudy_list_section .casestudy_list .casestudy_cols .space_col{width: 10%;}
 .casestudy_list_section .casestudy_list .casestudy_cols .right_col {width: 50%;}
-.casestudy_list_section .casestudy_list .wrapper {display: flex;width: 100%;flex-direction: column;gap: 80px;}
+.casestudy_list_section .casestudy_list .wrapper {display: flex;width: 100%;flex-direction: column;}
 .casestudy_btn{margin-top: 40px;}
 .casestudy_links ul {list-style: none;display: flex;gap: 90px;}
 .casestudy_links ul li {display: flex;align-items: center;gap: 15px;}
 .casestudy_links ul li a {color: #3E4959;text-decoration: underline;}
+.client_result{border-radius: 90px 90px 0px 0px; background: #ffffff; padding: 120px 0 120px 0; position: relative; z-index: 11; margin-top: -120px;}
+
+.casestudy-slider{position: relative; padding-bottom: 42px; margin-bottom: 15px;}
+.casestudySlider{position: relative;}
+.casestudySlider .swiper-slide .swiper-slide-img{width: 100%; max-width: 535px; height: 510px; overflow: hidden; border-radius: 20px; border: 3px solid #fff;}
+.casestudySlider .swiper-slide .swiper-slide-img img{width: 100%; height: 100%; object-fit: cover; object-position: center;}
+.casestudySlider.swiper-3d .swiper-slide-shadow{background: none; }
+.casestudy_cols .left_col .swiper-pagination{width: 100%; max-width: 535px; bottom: -42px;}
+.casestudy_cols .left_col .swiper-pagination .swiper-pagination-bullet-active{background-color: #3F4A5A;}
+.casestudyOverall{padding-top: 40px; margin-top: 40px; border-top: 2px solid #3E4959;}
+.casestudyOverall ul{list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 15px;}
+.casestudyOverall ul li{width: 100%; max-width: 12.5%; color: #3E4959;}
+.casestudyOverall ul li .overallDetails{display: flex; flex-direction: column; gap: 10px;}
+.casestudyOverall ul li .overallDetails strong{font-family: var(--OwnersTRIAL); font-size: 30px; font-weight: bold;}
+.casestudyOverall ul li .overallDetails span{font-size: 21px;}
+.casestudy_list:nth-child(even) .casestudySlider .swiper-slide .swiper-slide-img{border-color: var(--off-white);}
 
 .common-page{background-color: var(--off-white); padding: 284px 0 120px; height: 100%; margin-bottom: -50px;}
 .common-page h1{color: #3F4A5A; padding-bottom: 44px; margin-bottom: 50px; border-bottom: 1px solid #3F4A5A;}
@@ -688,6 +706,7 @@ span.wpcf7-not-valid-tip {font-size: 15px;line-height: 15px;color: #ff0000;font-
 .policy-list .policyContent ul li{background-image: url(../images/r-list-icon.svg); background-repeat: no-repeat; padding-left: 30px; background-position: 0 8px;}
 
 
+
 @media (prefers-reduced-motion: reduce) {
   .marquee__group {
     animation-play-state: paused;
@@ -705,3 +724,4 @@ span.wpcf7-not-valid-tip {font-size: 15px;line-height: 15px;color: #ff0000;font-
     transform: translateX(calc(-100% - calc(clamp(10rem, 1rem + 40vmin, 30rem) / 14)));
   }
 }
+
