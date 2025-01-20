@@ -723,7 +723,7 @@ span.wpcf7-not-valid-tip {font-size: 15px;line-height: 15px;color: #ff0000;font-
 .morePersonInfo{background-color: #fff;}
 
 .other_services_lead{position: relative;  background-color: #fff; border-radius: 90px 90px 0px 0px; margin-top: -230px; position: relative; padding: 90px 0 130px 0;}
-.other_services_lead .wrapper{padding: 0; border-top: 0;}
+.other_services_lead .wrapper{padding: 0; border-top: 0;} 
 
 @media (prefers-reduced-motion: reduce) {
   .marquee__group {
