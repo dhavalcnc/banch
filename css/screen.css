@@ -626,8 +626,9 @@ span.wpcf7-not-valid-tip {font-size: 15px;line-height: 15px;color: #ff0000;font-
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {-webkit-appearance: none;margin: 0;}
 input[type=number] {-moz-appearance: textfield;}
-.wpcf7-select {color: #D6D2C5}
-.wpcf7-select option:not(:first-of-type) {color: black;}
+.wpcf7-select:required:invalid {color: gray;}
+.wpcf7-select option[value=""][disabled] {display: none;}
+.wpcf7-select option {color: black;}
 
 
 .btn_col {display: block;text-align: center;margin-top: 50px;}
