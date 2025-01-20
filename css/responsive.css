@@ -419,4 +419,12 @@ header .navbar-toggler {display: none;}
   .form_row .inner_row .inner_col .wpcf7-list-item label {column-gap: 20px;}
   .form_row .inner_row .inner_col .form_group .form_group_inner p {flex-direction: column;}
   .form_row .inner_row .inner_col .form_group .form_group_inner p>span:after {right: 65px;}
+  .common-page{padding: 180px 0 120px;}
+  .sitemap-list > ul > li > a{font-size: 25px;}
+  .sitemap-list > ul > li > ul {margin-left: 50px;}
+  .sitemap-list > ul > li > ul >li {padding-top: 20px;}
+  .sitemap-list > ul > li > ul > li > a {font-size: 20px;}
+  .sitemap-list > ul > li{padding: 22px;}
+  .common-page h1 {padding-bottom: 30px;margin-bottom: 30px;}
+  .policy-list > ul > li{grid-template-columns: auto;gap: 20px;}
 }

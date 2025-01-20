@@ -623,6 +623,11 @@ span.wpcf7-form-control-wrap.recaptcha {padding: 70px 0;display: block;text-alig
 .wpcf7-form .form_row:nth-child(2) h2 {margin-top: 0;}
 span.wpcf7-not-valid-tip {font-size: 15px;line-height: 15px;color: #ff0000;font-weight: 500;font-family: var(--Poppins);}
 .wpcf7-response-output {text-align: center;font-size: 15px;line-height: 15px;font-weight: 500;font-family: var(--Poppins);}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {-webkit-appearance: none;margin: 0;}
+input[type=number] {-moz-appearance: textfield;}
+.wpcf7-select {color: #D6D2C5}
+.wpcf7-select option:not(:first-of-type) {color: black;}
 
 
 .btn_col {display: block;text-align: center;margin-top: 50px;}

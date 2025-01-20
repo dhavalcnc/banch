@@ -600,3 +600,17 @@ if($('.casestudySlider').length > 0){
   });
 }
 
+
+
+(function ($) {
+  'use strict';
+  $(document).ready(function () {
+      var $select = $('.wpcf7-select');
+      $select.each(function(e){
+        var first_option = $(this).find('option').first();
+        if(first_option.attr('value') == ''){
+          first_option.attr('disabled', true);
+        }
+    })
+ });
+})(jQuery)
