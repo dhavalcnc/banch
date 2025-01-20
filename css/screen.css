@@ -722,8 +722,16 @@ span.wpcf7-not-valid-tip {font-size: 15px;line-height: 15px;color: #ff0000;font-
 .personInfo .inner-content .personContent{width: 100%; max-width: calc(50% - 25px);}
 .morePersonInfo{background-color: #fff;}
 
-.other_services_lead{position: relative;  background-color: #fff; border-radius: 90px 90px 0px 0px; margin-top: -230px; position: relative; padding: 90px 0 130px 0;}
+.other_services_lead{position: relative;  background-color: #fff; border-radius: 90px 90px 0px 0px; margin-top: -230px; position: relative; padding: 90px 0 130px 0; }
 .other_services_lead .wrapper{padding: 0; border-top: 0;} 
+
+.commit-seciton { border-radius: 90px 90px 0px 0px; margin-top: -230px; position: relative; padding: 90px 0 130px 0; background-color: var(--off-white); margin-bottom: -40px; height: 970px;}
+.commit-seciton .inner-commit{display: flex; flex-wrap: wrap; gap: 50px;}
+.commit-seciton .inner-commit :is(.left-col, .right-col){width: 100%; max-width: calc(50% - 25px);}
+.commit-seciton .inner-commit .commit-content{margin-top: 70px;}
+.commit-seciton p{margin-bottom: 30px;}
+.commit-seciton .lets_talk{    background-color: #3F4A5A; margin-top: 23px;}
+.commit-seciton .lets_talk span { color: var(--off-white); }
 
 @media (prefers-reduced-motion: reduce) {
   .marquee__group {
