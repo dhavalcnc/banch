@@ -614,3 +614,13 @@ if($('.casestudySlider').length > 0){
     })
  });
 })(jQuery)
+
+document.addEventListener('DOMContentLoaded', function () {
+  // Target all <select> elements in the Contact Form 7 form
+  const selectFields = document.querySelectorAll('.wpcf7-form select');
+
+  // Loop through each select field and add the required attribute
+  selectFields.forEach(function (select) {
+      select.setAttribute('required', 'required');
+  });
+});
