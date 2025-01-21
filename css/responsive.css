@@ -454,4 +454,27 @@ header .navbar-toggler {display: none;}
   .commit-seciton .inner-commit .commit-content {margin-top: 0;}
   .leftPersonImg {max-width: 260px;height: 540px;bottom: -235px;}
   .casestudy_trusted_by {margin-bottom: 60px;}
+  .marquee_col {width: 195px !important;height: 125px;}
+  .marquee_bg img {height: 125px;}
+  .casestudy_instagram {border-radius: 30px 30px 0 0;padding: 50px 0 220px 0;}
+  .casestudy_instagram .text_title h2 {font-size: 35px;line-height: 1.2;}
+  .casestudy_instagram .text_title {margin-bottom: 30px;}
+  .casestudy_list_section .casestudy_list .casestudy_title_div .casestudy_title {font-size: 35px;line-height: 1.2;}
+  .casestudy_list {border-radius: 30px 30px 0px 0px;padding: 80px 0 80px 0;}
+  .casestudy_title_div {padding-bottom: 60px;}
+  .casestudy_list_section .casestudy_list .casestudy_cols {flex-direction: column;}
+  .casestudy_list_section .casestudy_list .casestudy_cols .left_col {width: 100%;}
+  .casestudy_list_section .casestudy_list .casestudy_cols .right_col {width: 100%;}
+  .casestudy_links ul {flex-direction: column;gap: 20px;}
+  .casestudyOverall ul {flex-direction: column;gap: 40px;}
+  .casestudyOverall ul li {max-width: 100%;}
+  .client_result_left_col h2 {font-size: 35px;line-height: 1.2;}
+  .client_result .wrapper {flex-direction: column;}
+  .client_result_left_col {width: 100%;}
+  .client_result_right_col {width: 100%;margin-top: 150px;}
+  .client_result_space_col {display: none;}
+  .client_resultSwiper .swiper-slide img {height: 280px;}
+  .client_resultSwiper .swiper-slide {height: 280px;}
+  .casestudySlider .swiper-slide .swiper-slide-img{height: 400px;}
+  .client_result {border-radius: 30px 30px 0px 0px;padding: 60px 0 60px 0;}
 }

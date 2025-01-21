@@ -527,74 +527,92 @@ circlezoom4.to(".banchmarketing h2", {
 //   });
 // }
 
-if($('.casestudySlider').length > 0){
+
+if ($('.casestudySlider').length > 0) {
   const casestudySlider = new Swiper(".casestudySlider", {
-    loop: true,  // Enable looping for continuous sliding
-    slidesPerView: 1,  // Show 1 slide at a time (active slide in the center)
-    spaceBetween: 0,  // No space between slides
-    effect: "creative",  // Use creative effect for animations
-    grabCursor: true,  // Enable grab cursor for drag functionality
-    loopAdditionalSlides: 2,  // Ensure we have additional slides for loop to show next slides
+    loop: true, // Enable continuous loop of slides
+
+    slidesPerView: 1,  // Display only 1 slide at a time in the view
+    spaceBetween: 0,  // Set space between slides (0 means no space)
+    
+    effect: "creative",  // Use 'creative' effect for unique slide transitions (can be 'slide', 'fade', 'cube', etc.)
+    grabCursor: true,  // Enable 'grab' cursor (hand cursor) for better user interaction when dragging the slides
+
+    loopAdditionalSlides: 2,  // Number of additional slides to loop around (to ensure the loop works seamlessly, allowing extra slides)
+    loopedSlides: 3,  // Ensure that 3 slides are looped to maintain the effect of the creative transition
+
+    watchSlidesProgress: true,  // Watch the progress of the slides for tracking animations or states (helps when working with advanced effects)
+
     creativeEffect: {
-      // Limit transformations to only the next 2 slides
-      limitProgress: 2,
+      limitProgress: 2,  // Limit how far the creative effect can progress in the transition (number of slides affected at once)
 
-      // Previous slide transformations (set to no transformation, not visible)
       prev: {
-        translate: [0, 0, 0],  // No translation for the previous slides
+        translate: [0, 0, 0],  // No movement for the previous slide (stay in the same position)
         opacity: 0,  // Make the previous slide fully transparent
-        scale: 1,  // Keep the scale at 100%
-        shadow: false,  // No shadow for previous slides
+        scale: 1,  // Keep the previous slide at normal size
+        shadow: false,  // No shadow for the previous slide
       },
 
-      // Next slide transformations (next one slide after the current)
       next: {
-        translate: [60, 0, 0],  // Move the next slide to the right
-        opacity: 1,  // Make the next slide fully visible
-        scale: 0.9,  // Scale down next slide to 80%
-        shadow: true,  // Add shadow effect to next slide
-        origin: "center",  // Set the origin for transformations
+        translate: [60, 0, 0],  // Move the next slide 60 pixels to the right
+        opacity: 1,  // Keep the next slide fully visible
+        scale: 0.9,  // Scale the next slide down to 90% of its original size
+        shadow: true,  // Add a shadow to the next slide for effect
+        origin: "center",  // Set the origin for the transformation to the center of the slide
       },
 
-      // Next2 slide transformations (second next slide after the current)
       next2: {
-        translate: [100, 0, 0],  // Move the second next slide further to the right
-        opacity: 1,  // Fully visible
-        scale: 0.8,  // Further scale down second next slide
-        shadow: true,  // Add shadow effect to second next slide
-        origin: "center",  // Set the origin for transformations
+        translate: [100, 0, 0],  // Move the second next slide 100 pixels to the right
+        opacity: 1,  // Keep the second next slide fully visible
+        scale: 0.8,  // Scale the second next slide down to 80% of its original size
+        shadow: true,  // Add a shadow to the second next slide
+        origin: "center",  // Set the origin for the transformation to the center of the slide
       },
 
-      // Current slide transformations (centered)
       current: {
-        translate: [0, 0, 0],  // No translation for the current slide
-        opacity: 1,  // Full opacity for the current slide
-        scale: 1,  // Full scale for the current slide
-        shadow: true,  // Add shadow effect to the current slide
-        origin: "center",  // Set the origin for the current slide's transformation
+        translate: [0, 0, 0],  // Keep the current slide in its original position (no translation)
+        opacity: 1,  // Make the current slide fully visible
+        scale: 1,  // Keep the current slide at full size
+        shadow: true,  // Add a shadow effect to the current slide
+        origin: "center",  // Set the origin for the transformation to the center of the current slide
       },
 
-      // Disable slide shadows for smoother transitions
-      slideShadows: false,
+      slideShadows: false,  // Disable shadows on the slides to make transitions smoother and less visually busy
     },
 
-    // Pagination for bullets
+    // Pagination for bullets (dots at the bottom)
     pagination: {
-      el: ".swiper-pagination",
-      clickable: true,  // Enable clicking on dots to navigate
+      el: ".swiper-pagination",  // Element that holds the pagination controls (dots)
+      clickable: true,  // Allow users to click on the pagination dots to navigate to the corresponding slide
     },
 
     // Adjust the looped slides properly after the last slide
     on: {
-      slideChange: function () {
-        const swiperInstance = this;  // Use `this` to refer to the swiper instance
-        const totalSlides = swiperInstance.slides.length;
+      beforeInit: function() {
+        // Event triggered before initialization of the swiper
+        const wrapper = this.el.querySelector('.swiper-wrapper');  // Select the wrapper of the swiper
+        const slides = wrapper.querySelectorAll('.swiper-slide');  // Get all slides within the swiper wrapper
 
-        // Check if the swiper is at the second-to-last slide
-        if (swiperInstance.realIndex === totalSlides - 0) {
-          // Force swiper to refresh and show the next slides
-          swiperInstance.slideTo(swiperInstance.realIndex);  // Revisit the active slide to refresh the state
+        // Proceed only if there are exactly 3 slides
+        if (slides.length === 3) {
+          // Clone each slide and append the clone to the swiper wrapper
+          slides.forEach(slide => {
+            const clone = slide.cloneNode(true);  // Clone the slide
+            clone.classList.add('swiper-slide-clone');  // Add a class to identify the clone
+            wrapper.appendChild(clone);  // Append the cloned slide to the swiper wrapper
+          });
         }
+      },
+
+      slideChange: function() {
+        // Event triggered when the slide changes
+        const swiperInstance = this;
+        
+        // Add a small delay to allow smooth transition (this may help in some cases with creative effects)
+        setTimeout(() => {
+          swiperInstance.updateSlides();  // Update the swiper slides to ensure the correct order
+          swiperInstance.updateProgress();  // Update the progress of the slides for smooth navigation
+        }, 0);
       }
     }
   });
