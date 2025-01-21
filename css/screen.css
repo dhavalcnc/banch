@@ -694,6 +694,15 @@ form.wpcf7-form.submitting .wpcf7-spinner:after {display: block;}
 .casestudyOverall ul li .overallDetails strong{font-family: var(--OwnersTRIAL); font-size: 30px; font-weight: bold;}
 .casestudyOverall ul li .overallDetails span{font-size: 21px;}
 .casestudy_list:nth-child(even) .casestudySlider .swiper-slide .swiper-slide-img{border-color: var(--off-white);}
+.client_result_left_col{width: 30%;}
+.client_result_right_col{width: 40%;}
+.client_result_space_col{width: 30%;}
+.client_resultSwiper .swiper-slide{box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.15);}
+.client_resultSwiper .swiper-slide.swiper-slide-next {filter: blur(4px);}
+.client_resultSwiper .swiper-slide.next-slide {filter: blur(6px);}
+.client_resultSwiper .swiper-slide.swiper-slide-visible.swiper-slide-fully-visible.swiper-slide-active {margin-top: -70px;}
+.client_resultSwiper .swiper-slide{height: 480px;}
+.client_resultSwiper .swiper-slide img{height: 480px; object-fit: cover;width: 100%;}
 
 .common-page{background-color: var(--off-white); padding: 284px 0 120px; height: 100%; margin-bottom: -50px;}
 .common-page h1{color: #3F4A5A; padding-bottom: 44px; margin-bottom: 50px; border-bottom: 1px solid #3F4A5A;}
@@ -720,7 +729,7 @@ form.wpcf7-form.submitting .wpcf7-spinner:after {display: block;}
 
 .localLeads-banner .col{width: calc(100% - 625px);}
 .leadslist{margin-top: 100px;}
-.leadslist ul{list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0 120px;}
+.leadslist ul{list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 50px 120px;}
 .leadslist ul li{color: #FFFFFF;}
 .leadslist ul li .leadsItem{display: flex; flex-direction: column;}
 .leadslist ul li .leadsItem strong{font-size: 30px; font-family: var(--OwnersTRIAL);}

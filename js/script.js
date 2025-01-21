@@ -624,3 +624,86 @@ document.addEventListener('DOMContentLoaded', function () {
       select.setAttribute('required', 'required');
   });
 });
+
+
+var swiper = new Swiper(".client_resultSwiper", {
+  loop: true,  // Enable looping for continuous sliding
+  slidesPerView: 1,  // Show 1 slide at a time (active slide in the center)
+  spaceBetween: 0,  // No space between slides
+  effect: "creative",  // Use creative effect for animations
+  grabCursor: true,  // Enable grab cursor for drag functionality
+  loopAdditionalSlides: 2,  // Ensure we have additional slides for loop to show next slides
+  creativeEffect: {
+    // Limit transformations to only the next 2 slides
+    limitProgress: 2,
+
+    // Previous slide transformations (set to no transformation, not visible)
+    prev: {
+      translate: [0, 0, 0],  // No translation for the previous slides
+      opacity: 0,  // Make the previous slide fully transparent
+      scale: 1,  // Keep the scale at 100%
+      shadow: false,  // No shadow for previous slides
+    },
+
+    // Next slide transformations (next one slide after the current)
+    next: {
+      translate: [250, 0, 0],  // Move the next slide to the right
+      opacity: 1,  // Make the next slide fully visible
+      scale: 0.9,  // Scale down next slide to 80%
+      shadow: false,  // Add shadow effect to next slide
+      origin: "center",  // Set the origin for transformations
+    },
+
+    // Next2 slide transformations (second next slide after the current)
+    next2: {
+      translate: [100, 0, 0],  // Move the second next slide further to the right
+      opacity: 1,  // Fully visible
+      scale: 0.7,  // Further scale down second next slide
+      shadow: false,  // Add shadow effect to second next slide
+      origin: "top center",  // Set the origin for transformations
+    },
+
+    // Current slide transformations (centered)
+    current: {
+      translate: [0, 0, 0],  // No translation for the current slide
+      opacity: 1,  // Full opacity for the current slide
+      scale: 1,  // Full scale for the current slide
+      shadow: false,  // Add shadow effect to the current slide
+      origin: "center",  // Set the origin for the current slide's transformation
+    },
+
+    // Disable slide shadows for smoother transitions
+    slideShadows: false,
+  },
+
+  // Pagination for bullets
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,  // Enable clicking on dots to navigate
+  },
+
+  // Adjust the looped slides properly after the last slide
+  on: {
+    slideChange: function () {
+      const swiperInstance = this;  // Use `this` to refer to the swiper instance
+      const totalSlides = swiperInstance.slides.length;
+
+      swiperInstance.slides.forEach(function (slide) {
+        slide.classList.remove('next-slide', 'next2-slide');
+      });
+
+      // Calculate next slide index (wrap around using modulo for looped slides)
+      let nextSlideIndex = (swiperInstance.activeIndex + 2) % totalSlides;
+      let next2SlideIndex = (swiperInstance.activeIndex + 3) % totalSlides;
+
+      // Add the 'next' and 'next2' classes for the appropriate slides
+      let nextSlide = swiperInstance.slides[nextSlideIndex];
+      let next2Slide = swiperInstance.slides[next2SlideIndex];
+
+      if (nextSlide) nextSlide.classList.add('next-slide');
+      if (next2Slide) next2Slide.classList.add('next2-slide');
+
+      
+    }
+  }
+});
