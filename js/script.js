@@ -8,6 +8,7 @@ jQuery(window).on("load", function () {
 });
 
 jQuery(document).ready(function ($) {
+  headerScroll();
   // Initialize the first element as active
   const $rightColItems = $(".our_goal .inner .right_col li");
   const $firstItem = $rightColItems.first();
@@ -31,28 +32,12 @@ jQuery(document).ready(function ($) {
     $this.next(".text").slideDown();
   });
 
-  $("header ul li a,footer .bottom_footer ul li a").each(function () {
-    var _this = $(this); // Store the jQuery object
-    var currentWidth = _this.width(); // Get the width of the element
-    console.log(currentWidth);
-    var newWidth = currentWidth + 6; // Add 5 to the current width
-    _this.css("width", newWidth + "px"); // Set the new width
-  });
-
-  // let lastScrollTop = 0; // Keep track of the last scroll position
-
-  // $(window).on("scroll", function () {
-  //   let currentScroll = $(this).scrollTop(); // Get the current scroll position
-
-  //   if (currentScroll > lastScrollTop) {
-  //     // Scrolling down
-  //     $("header").addClass("hidden");
-  //   } else {
-  //     // Scrolling up
-  //     $("header").removeClass("hidden");
-  //   }
-
-  //   lastScrollTop = currentScroll; // Update the last scroll position
+  // $("header ul li a,footer .bottom_footer ul li a").each(function () {
+  //   var _this = $(this); // Store the jQuery object
+  //   var currentWidth = _this.width(); // Get the width of the element
+  //   // console.log(currentWidth);
+  //   var newWidth = currentWidth + 6; // Add 5 to the current width
+  //   _this.css("width", newWidth + "px"); // Set the new width
   // });
 
   let lastScrollTop = 0;
@@ -85,11 +70,13 @@ jQuery(document).ready(function ($) {
   $("header .navbar-toggler").click(function () {
     $(this).toggleClass("active");
     $("header nav").toggleClass("active");
+    $("body").toggleClass("navbaractive");
   });
 
   $("header ul li a").click(function () {
     $("header .navbar-toggler").removeClass("active");
     $("header nav").removeClass("active");
+    $("body").removeClass("navbaractive");
   });
 
   /* megnify */
@@ -178,14 +165,27 @@ jQuery(document).ready(function ($) {
   });
 });
 
-(function ($) {
-  $(window).scroll(function () {
-    var sticky = $("header"),
-      scroll = $(window).scrollTop();
+function headerScroll() {
+  // var headerTop = $(".header-main").outerHeight();
+  if (jQuery(this).scrollTop() > 50) {
+    jQuery("header").addClass("fixed");
+  } else {
+    jQuery("header").removeClass("fixed");
+  }
+}
 
-    if (scroll >= 50) sticky.addClass("fixed");
-    else sticky.removeClass("fixed");
-  });
+jQuery(window).scroll(function () {
+  headerScroll();
+});
+
+(function ($) {
+  // $(window).scroll(function () {
+  //   var sticky = $("header"),
+  //     scroll = $(window).scrollTop();
+
+  //   if (scroll >= 50) sticky.addClass("fixed");
+  //   else sticky.removeClass("fixed");
+  // });
 
   if ($(window).width() > 767) {
     /* banner aniamtion */
@@ -233,9 +233,7 @@ jQuery(document).ready(function ($) {
             if (progress >= 0.8) {
               document.querySelector(".on_instagram").classList.add("active");
             } else {
-              document
-                .querySelector(".on_instagram")
-                .classList.remove("active");
+              document.querySelector(".on_instagram").classList.remove("active");
             }
 
             if (progress >= 0.99) {
@@ -244,7 +242,7 @@ jQuery(document).ready(function ($) {
               document.querySelector(".on_instagram").classList.remove("open");
             }
 
-            if (progress >= 0.8) {
+            if (progress >= 1) {
               document.querySelector(".comman_sec").classList.add("active");
             } else {
               document.querySelector(".comman_sec").classList.remove("active");
@@ -316,7 +314,7 @@ jQuery(document).ready(function ($) {
       $(".profitable_campaigns").each(function (index, section) {
         const $section = $(this); // Current section
         const sectionId = $section.attr("id"); // Get the ID of the section (optional)
-        console.log(sectionId);
+        // console.log(sectionId);
         if ($("#" + sectionId + " .animation_col .col").length > 1) {
           // Create a timeline for each section
           const animationTimeline = gsap.timeline({
@@ -423,78 +421,93 @@ jQuery(document).ready(function ($) {
         }
       });
     }
+
+    /* Three blog */
+    if ($(".casestudy_instagram").length > 0) {
+      gsap.registerPlugin(ScrollTrigger);
+      let scrollDistance5 = 90;
+
+      // Timeline with ScrollTrigger
+      const circlezoom5 = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".casestudy_instagram",
+          scrub: 0.5, // Smooth scrolling animation
+          start: "top 100%", // Start when .casestudy_instagram reaches 60% of the viewport
+          end: `+=${scrollDistance5}`, // Animation ends after scrollDistance5
+          pin: false, // No pinning
+          //markers: true, // Debugging markers (remove in production)
+          onUpdate: (self) => {
+            let progress = self.progress; // Progress of scroll (0 to 1)
+            if (progress >= 0.8) {
+              document.querySelector(".casestudy_instagram").classList.add("active");
+            } else {
+              document.querySelector(".casestudy_instagram").classList.remove("active");
+            }
+
+            if (progress >= 0.99) {
+              document.querySelector(".casestudy_instagram").classList.add("open");
+            } else {
+              document.querySelector(".casestudy_instagram").classList.remove("open");
+            }
+          },
+        },
+      });
+
+      circlezoom5.to(".casestudy_instagram", {
+        y: -90, // Moves up by 150px
+        ease: "none",
+      });
+      /* Three blog end */
+    }
   }
-})(jQuery);
 
-// document.addEventListener("DOMContentLoaded", function () {
-//   const onInstagramSection = document.querySelector(".on_instagram");
-//   const commanSecSection = document.querySelector(".comman_sec");
+  if ($(window).width() < 767) {
+  /* Three blog */
+  if ($(".on_instagram").length > 0) {
+    gsap.registerPlugin(ScrollTrigger);
+    let scrollDistance1 = 300;
 
-//   if (onInstagramSection && commanSecSection) {
-//     window.addEventListener("scroll", function () {
-//       const rect = onInstagramSection.getBoundingClientRect();
-//       const viewportHeight = window.innerHeight;
+    // Timeline with ScrollTrigger
+    const circlezoom1 = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".on_instagram",
+        scrub: 0.5, // Smooth scrolling animation
+        start: "top 100%", // Start when .on_instagram reaches 60% of the viewport
+        end: `+=${scrollDistance1}`, // Animation ends after scrollDistance1
+        pin: false, // No pinning
+        //markers: true, // Debugging markers (remove in production)
+        onUpdate: (self) => {
+          let progress = self.progress; // Progress of scroll (0 to 1)
+          if (progress >= 0.8) {
+            document.querySelector(".on_instagram").classList.add("active");
+          } else {
+            document
+              .querySelector(".on_instagram")
+              .classList.remove("active");
+          }
 
-//       // Check if .on_instagram is in the viewport
-//       if (rect.top < viewportHeight && rect.bottom > 0) {
-//         // .on_instagram is in the viewport, add class to both sections
-//         commanSecSection.classList.add("active");
-//         onInstagramSection.classList.add("active");
-//         onInstagramSection.classList.add("open");
-//       } else {
-//         // .on_instagram is out of the viewport, remove class from both sections
-//         commanSecSection.classList.remove("active");
-//         onInstagramSection.classList.remove("active");
-//         onInstagramSection.classList.remove("open");
-//       }
-//     });
-//   }
-// });
+          if (progress >= 0.99) {
+            document.querySelector(".on_instagram").classList.add("open");
+          } else {
+            document.querySelector(".on_instagram").classList.remove("open");
+          }
 
-/* Three blog */
-if ($(".casestudy_instagram").length > 0) {
-  gsap.registerPlugin(ScrollTrigger);
-  let scrollDistance5 = 90;
-
-  // Timeline with ScrollTrigger
-  const circlezoom5 = gsap.timeline({
-    scrollTrigger: {
-      trigger: ".casestudy_instagram",
-      scrub: 0.5, // Smooth scrolling animation
-      start: "top 100%", // Start when .casestudy_instagram reaches 60% of the viewport
-      end: `+=${scrollDistance5}`, // Animation ends after scrollDistance5
-      pin: false, // No pinning
-      //markers: true, // Debugging markers (remove in production)
-      onUpdate: (self) => {
-        let progress = self.progress; // Progress of scroll (0 to 1)
-        if (progress >= 0.8) {
-          document
-            .querySelector(".casestudy_instagram")
-            .classList.add("active");
-        } else {
-          document
-            .querySelector(".casestudy_instagram")
-            .classList.remove("active");
-        }
-
-        if (progress >= 0.99) {
-          document.querySelector(".casestudy_instagram").classList.add("open");
-        } else {
-          document
-            .querySelector(".casestudy_instagram")
-            .classList.remove("open");
-        }
+          if (progress >= 1) {
+            document.querySelector(".comman_sec").classList.add("active");
+          } else {
+            document.querySelector(".comman_sec").classList.remove("active");
+          }
+        },
       },
-    },
-  });
+    });
 
-  circlezoom5.to(".casestudy_instagram", {
-    y: -90, // Moves up by 150px
-    ease: "none",
-  });
-  /* Three blog end */
+    circlezoom1.to(".on_instagram", {
+      y: 0, // Moves up by 150px
+      ease: "none",
+    });
+    /* Three blog end */
+  }
 }
-
 
 let scrollDistance4 = 600;
 const circlezoom4 = gsap.timeline({
@@ -512,21 +525,75 @@ circlezoom4.to(".banchmarketing h2", {
   ease: "none",
 });
 
-// if($('.casestudySlider').length > 0){
-//   const casestudySlider = new Swiper(".casestudySlider", {
-//     effect: "cards",
-//     grabCursor: true,
-//     centeredSlides: true,
-//     keyboard: {
-//       enabled: true
-//     },
-//     pagination: {
-//       el: ".swiper-pagination",
-//       clickable: true,
-//     },
-//   });
-// }
+document.addEventListener('DOMContentLoaded', () => {
+  function setRandomActiveClass() {
+    const columns = document.querySelectorAll('.trusted_by .col');
+    columns.forEach(col => col.classList.remove('active'));
+    const randomIndex = Math.floor(Math.random() * columns.length);
+    if (columns[randomIndex]) {
+        columns[randomIndex].classList.add('active');
+    }
+  }
+  setRandomActiveClass();
+  setInterval(setRandomActiveClass, 3000);
+});
 
+(function ($) {
+  'use strict';
+  $(document).ready(function () {
+      var $select = $('.wpcf7-select');
+      $select.each(function(e){
+        var first_option = $(this).find('option').first();
+        if(first_option.attr('value') == ''){
+          first_option.attr('disabled', true);
+        }
+    })
+ });
+})(jQuery)
+
+document.addEventListener('DOMContentLoaded', function () {
+  const selectFields = document.querySelectorAll('.wpcf7-form select');
+  selectFields.forEach(function (select) {
+      select.setAttribute('required', 'required');
+  });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const footerBtn = document.querySelector(".footerBtn");
+  const footer = document.querySelector("footer");
+  let isFooterInView = false; // Flag to track footer visibility
+
+  // Intersection Observer to hide button when footer is visible
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          isFooterInView = true; // Footer is visible
+          footerBtn.classList.remove("show"); // Hide the button
+        } else {
+          isFooterInView = false; // Footer is not visible
+          if (window.scrollY > 400) {
+            footerBtn.classList.add("show"); // Show the button if scrolled
+          }
+        }
+      });
+    },
+    { root: null, threshold: 0.1 } // Adjust threshold if needed
+  );
+
+  observer.observe(footer);
+
+  // Handle scroll-based visibility
+  window.addEventListener("scroll", () => {
+    if (!isFooterInView) { // Only update visibility if footer is not visible
+      if (window.scrollY > 400) {
+        footerBtn.classList.add("show");
+      } else {
+        footerBtn.classList.remove("show");
+      }
+    }
+  });
+});
 
 if ($('.casestudySlider').length > 0) {
   const casestudySlider = new Swiper(".casestudySlider", {
@@ -618,110 +685,126 @@ if ($('.casestudySlider').length > 0) {
   });
 }
 
+if ($('.client_resultSwiper').length > 0) {
+  var swiper = new Swiper(".client_resultSwiper", {
+    loop: true,  // Enable looping for continuous sliding
+    slidesPerView: 1,  // Show 1 slide at a time (active slide in the center)
+    spaceBetween: 0,  // No space between slides
+    effect: "creative",  // Use creative effect for animations
+    grabCursor: true,  // Enable grab cursor for drag functionality
+    loopAdditionalSlides: 2,  // Ensure we have additional slides for loop to show next slides
+    creativeEffect: {
+      // Limit transformations to only the next 2 slides
+      limitProgress: 2,
 
+      // Previous slide transformations (set to no transformation, not visible)
+      prev: {
+        translate: [0, 0, 0],  // No translation for the previous slides
+        opacity: 0,  // Make the previous slide fully transparent
+        scale: 1,  // Keep the scale at 100%
+        shadow: false,  // No shadow for previous slides
+      },
 
-(function ($) {
-  'use strict';
-  $(document).ready(function () {
-      var $select = $('.wpcf7-select');
-      $select.each(function(e){
-        var first_option = $(this).find('option').first();
-        if(first_option.attr('value') == ''){
-          first_option.attr('disabled', true);
-        }
-    })
- });
-})(jQuery)
+      // Next slide transformations (next one slide after the current)
+      next: {
+        translate: [250, 0, 0],  // Move the next slide to the right
+        opacity: 1,  // Make the next slide fully visible
+        scale: 0.9,  // Scale down next slide to 80%
+        shadow: false,  // Add shadow effect to next slide
+        origin: "center",  // Set the origin for transformations
+      },
 
-document.addEventListener('DOMContentLoaded', function () {
-  // Target all <select> elements in the Contact Form 7 form
-  const selectFields = document.querySelectorAll('.wpcf7-form select');
+      // Next2 slide transformations (second next slide after the current)
+      next2: {
+        translate: [100, 0, 0],  // Move the second next slide further to the right
+        opacity: 1,  // Fully visible
+        scale: 0.7,  // Further scale down second next slide
+        shadow: false,  // Add shadow effect to second next slide
+        origin: "top center",  // Set the origin for transformations
+      },
 
-  // Loop through each select field and add the required attribute
-  selectFields.forEach(function (select) {
-      select.setAttribute('required', 'required');
-  });
-});
+      // Current slide transformations (centered)
+      current: {
+        translate: [0, 0, 0],  // No translation for the current slide
+        opacity: 1,  // Full opacity for the current slide
+        scale: 1,  // Full scale for the current slide
+        shadow: false,  // Add shadow effect to the current slide
+        origin: "center",  // Set the origin for the current slide's transformation
+      },
 
-
-var swiper = new Swiper(".client_resultSwiper", {
-  loop: true,  // Enable looping for continuous sliding
-  slidesPerView: 1,  // Show 1 slide at a time (active slide in the center)
-  spaceBetween: 0,  // No space between slides
-  effect: "creative",  // Use creative effect for animations
-  grabCursor: true,  // Enable grab cursor for drag functionality
-  loopAdditionalSlides: 2,  // Ensure we have additional slides for loop to show next slides
-  creativeEffect: {
-    // Limit transformations to only the next 2 slides
-    limitProgress: 2,
-
-    // Previous slide transformations (set to no transformation, not visible)
-    prev: {
-      translate: [0, 0, 0],  // No translation for the previous slides
-      opacity: 0,  // Make the previous slide fully transparent
-      scale: 1,  // Keep the scale at 100%
-      shadow: false,  // No shadow for previous slides
+      // Disable slide shadows for smoother transitions
+      slideShadows: false,
+    },
+    // Responsive breakpoints
+    breakpoints: {
+      1600: {
+        creativeEffect: {
+          next: {
+            translate: [250, 0, 0], // Larger translation for larger screens
+            opacity: 1,
+            scale: 0.9,
+            shadow: false,
+            origin: "center",
+          },
+          next2: {
+            translate: [100, 0, 0], // Larger translation for larger screens
+            opacity: 1,
+            scale: 0.8,
+            shadow: false,
+            origin: "top center",
+          },
+        },
+      },
+      // When the screen width is < 768px
+      0: {
+        creativeEffect: {
+          next: {
+            translate: [100, 0, 0], // Smaller translation for smaller screens
+            opacity: 1,
+            scale: 0.9,
+            shadow: false,
+            origin: "center",
+          },
+          next2: {
+            translate: [75, 0, 0], // Smaller translation for smaller screens
+            opacity: 1,
+            scale: 0.8,
+            shadow: false,
+            origin: "top center",
+          },
+        },
+      },
     },
 
-    // Next slide transformations (next one slide after the current)
-    next: {
-      translate: [250, 0, 0],  // Move the next slide to the right
-      opacity: 1,  // Make the next slide fully visible
-      scale: 0.9,  // Scale down next slide to 80%
-      shadow: false,  // Add shadow effect to next slide
-      origin: "center",  // Set the origin for transformations
+    // Pagination for bullets
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,  // Enable clicking on dots to navigate
     },
 
-    // Next2 slide transformations (second next slide after the current)
-    next2: {
-      translate: [100, 0, 0],  // Move the second next slide further to the right
-      opacity: 1,  // Fully visible
-      scale: 0.7,  // Further scale down second next slide
-      shadow: false,  // Add shadow effect to second next slide
-      origin: "top center",  // Set the origin for transformations
-    },
+    // Adjust the looped slides properly after the last slide
+    on: {
+      slideChange: function () {
+        const swiperInstance = this;  // Use `this` to refer to the swiper instance
+        const totalSlides = swiperInstance.slides.length;
 
-    // Current slide transformations (centered)
-    current: {
-      translate: [0, 0, 0],  // No translation for the current slide
-      opacity: 1,  // Full opacity for the current slide
-      scale: 1,  // Full scale for the current slide
-      shadow: false,  // Add shadow effect to the current slide
-      origin: "center",  // Set the origin for the current slide's transformation
-    },
+        swiperInstance.slides.forEach(function (slide) {
+          slide.classList.remove('next-slide', 'next2-slide');
+        });
 
-    // Disable slide shadows for smoother transitions
-    slideShadows: false,
-  },
+        // Calculate next slide index (wrap around using modulo for looped slides)
+        let nextSlideIndex = (swiperInstance.activeIndex + 2) % totalSlides;
+        let next2SlideIndex = (swiperInstance.activeIndex + 3) % totalSlides;
 
-  // Pagination for bullets
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,  // Enable clicking on dots to navigate
-  },
+        // Add the 'next' and 'next2' classes for the appropriate slides
+        let nextSlide = swiperInstance.slides[nextSlideIndex];
+        let next2Slide = swiperInstance.slides[next2SlideIndex];
 
-  // Adjust the looped slides properly after the last slide
-  on: {
-    slideChange: function () {
-      const swiperInstance = this;  // Use `this` to refer to the swiper instance
-      const totalSlides = swiperInstance.slides.length;
-
-      swiperInstance.slides.forEach(function (slide) {
-        slide.classList.remove('next-slide', 'next2-slide');
-      });
-
-      // Calculate next slide index (wrap around using modulo for looped slides)
-      let nextSlideIndex = (swiperInstance.activeIndex + 2) % totalSlides;
-      let next2SlideIndex = (swiperInstance.activeIndex + 3) % totalSlides;
-
-      // Add the 'next' and 'next2' classes for the appropriate slides
-      let nextSlide = swiperInstance.slides[nextSlideIndex];
-      let next2Slide = swiperInstance.slides[next2SlideIndex];
-
-      if (nextSlide) nextSlide.classList.add('next-slide');
-      if (next2Slide) next2Slide.classList.add('next2-slide');
-
-      
+        if (nextSlide) nextSlide.classList.add('next-slide');
+        if (next2Slide) next2Slide.classList.add('next2-slide');   
+      }
     }
-  }
-});
+  });
+}
+
+})(jQuery);

@@ -1,17 +1,19 @@
 @media only screen and (max-width:1750px){
-  #full_wrapper { overflow: hidden; }
+  /* #full_wrapper { overflow: hidden; } */
   h1 { font-size: 125px; }
   .wrapper { max-width: 1500px; }
   .banchmarketing h2 { font-size: 139px; }
   .team_extension .col { padding: 182px 0 229px; max-width: 60%; }
   .team_extension .man { position: absolute; right: -1%; bottom: -60px; max-width: 61%;}
   .team_extension p{padding-right: 100px;}
+  .personInfo .heading h2,
+  .client_result_left_col h2,
   .social_media h2,.emailsec .left_col h2,.team_extension h2,
   .on_instagram .text_title h2,
   .trusted_by h2,
   .profitable_campaigns .left_col h2,
   .our_goal h2,
-  .ads_comman_section h2,.paid_ads_service h2,.other_services h2 { font-size: 74px; line-height: 1.2; }
+  .ads_comman_section h2,.paid_ads_service h2,.other_services h2,.casestudy_instagram .text_title h2,.casestudy_list_section .casestudy_list .casestudy_title_div .casestudy_title { font-size: 74px; line-height: 1.2; }
   .on_instagram .text_title h2 { width: 601px; }
   .on_instagram .text_title p { width: calc(100% - 605px); }
   .paid_ads .marquee .item img { min-height: 100%; }
@@ -20,34 +22,37 @@
   .profitable_campaigns .left_col,#ecommerce.profitable_campaigns .left_col { max-width: 60%; }
  
   .profitable_campaigns .animation_col { width: 410px; height: 530px; margin-top: -80px; }
-  .ads_link li a { font-size: 22px; line-height: 65px; padding: 0px 40px; }
+  .ads_link li span { font-size: 22px; line-height: 65px; padding: 0px 40px; }
   .our_goal { margin-top: -169px; }
   .our_goal .inner .left_col { width: 40%; }
   .our_goal .inner .right_col { width: 52%; }
-  .our_goal .inner .right_col li h3 { font-size: 50px; line-height: 45px; transform: translateX(-103px); }
+  .our_goal .inner .right_col li h3 { font-size: 50px; line-height: 45px; transform: translateX(-100px); }
 
   #campaigns_growth.profitable_campaigns, #ecommerce.profitable_campaigns, #seo.profitable_campaigns , .profitable_campaigns { padding: 250px 0 100px; }
   .other_services .colin>span { font-size: 45px; line-height: 50px;}
   .other_services .colin>img{max-width: 150px;}
   .comman_sec .inner { gap: 16px; }
+  .casestudy_title_div {padding-bottom: 50px;}
+  .casestudy_list {padding: 90px 0 130px 0;}
+  .casestudy_instagram .text_title{margin-bottom: 30px;}
+  .title_404 {font-size: 40rem;line-height: 0.9;}
 }
 
 @media only screen and (max-width:1599px){
   .wrapper { max-width: 1300px; }
   .banchmarketing h2 { font-size: 122px; }
   p { font-size: 18px;line-height: 1.6 !important; }
-  h1 { font-size: 100px; line-height: 1.3; }
+  h1 { font-size: 65px; line-height: 1.3; }
   .banner_image { height:600px; max-height: 600px; margin-top: -300px; }
   .banner{min-height: 500px;}
   .mail_wrap .imgWrap { height: 600px; }
   .paid_ads .marquee .item { width: 260px; height: 270px; max-width:260px; }
   .team_extension .wrapper { padding: 0 40px; }
-  .affordable h2 { font-size: 70px; }
+  .affordable h2 { font-size: 42px; }
   .team_extension .b_brand { top: -60px; max-width: 150px; }
   .team_extension .col { padding: 130px 0 170px; max-width: 60%; }
   .team_extension .man { right: -10%; bottom: -40px; max-width: 61%; }
   #customers-testimonials .item .shadow-effect { padding: 20px 25px; }
-
   #customers-testimonials,
   #customers-testimonials .item{height: 645px;}
   #customers-testimonials .item {width:calc(33.33% - 20px);}
@@ -56,6 +61,7 @@
   .on_instagram.active #customers-testimonials .item:nth-child(3){left: calc(66.66% + 40px);}
   .comman_sec { padding-bottom: 70px; }
   .banchmarketing h2 { font-size: 120px; }
+  .client_result_left_col h2,
   .personInfo .heading h2,
   .personInfo .heading h2,
   .social_media h2,.emailsec .left_col h2,.team_extension h2,
@@ -63,19 +69,65 @@
   .trusted_by h2,
   .profitable_campaigns .left_col h2,
   .our_goal h2,
-  .ads_comman_section h2,.paid_ads_service h2 ,.other_services h2{ font-size: 64px; line-height: 1.2;}
+  .ads_comman_section h2,.paid_ads_service h2 ,.other_services h2{ font-size: 42px; line-height: 1.2;}
+  .casestudy_instagram .text_title h2{font-size: 42px; line-height: 1.2;}
   .social_media { padding: 120px 0 300px !important; }
   .emailsec .wrapper { border-radius: 40px; padding: 60px 50px; }
   .emailsec .right_col { width: 50%; }
   .emailsec { margin-top: -230px; }
   .top_footer p { width: 33%; font-size: 24px; }
-
   .service_link .inner a:not(:last-child) { margin-right: 20px; }
   .comman_sec .inner { gap: 14px; }
   .leftPersonImg {max-width: 475px;height: 600px;}
   .leadslist ul {gap: 50px;}
   .localLeads-banner .col {width: calc(100% - 475px);}
   .casestudy_trusted_by {margin-top: 10px;}
+  .casestudy_list_section .casestudy_list .casestudy_title_div .casestudy_title {font-size: 42px;line-height: 1.2;}
+  .casestudyOverall ul li .overallDetails strong {font-size: 25px;}
+  .form_row h2 {font-size: 40px;margin-bottom: 40px;margin-top: 28px;}
+  .form_row .inner_row .inner_col .wpcf7-list-item label {margin-bottom: 25px;column-gap: 20px;}
+  .form_row .inner_row .inner_col .wpcf7-list-item-label {font-size: 20px;}
+  .form_row .inner_row .inner_col label {font-size: 20px;}
+  .wpcf7-form-control.wpcf7-submit {font-size: 20px;}
+  .form_row .inner_row .inner_col .form_input {font-size: 20px;padding: 10px 20px;height: auto;}
+  .form_row .inner_row .inner_col .form_group {margin-bottom: 20px;}
+  .casestudyOverall ul li .overallDetails span {font-size: 18px;}
+  .casestudyOverall ul{gap: 60px;}
+  .client_resultSwiper .swiper-slide img,.client_resultSwiper .swiper-slide {height: 330px;}
+  .client_result_right_col {width: 50%;}
+  .client_result_space_col {width: 20%;}
+  .ads_link li span {padding: 0px 40px;font-size: 22px;}
+  .casestudy_list {padding: 70px 0 110px 0;}
+  .casestudy_title_div {padding-bottom: 30px;}
+  .marquee_plateform .marquee .item>span{font-size: 60px;}
+  .title h2{font-size: 42px;}
+  footer .top_footer p{font-size: 25px;}
+  .banner .text{max-width: 496px;}
+  .banner h1 {margin-bottom: 140px}
+  .our_goal .inner .right_col li h3{font-size: 35px;}
+  .our_goal .inner .right_col li .text{margin-top: 25px;}
+  .other_services .colin{height: 470px;}
+  .other_services .colin>span {font-size: 35px;}
+  .marquee_col:hover{transform: scale(1.1);}
+  .other_services h2{margin-bottom: 30px;}
+  .page-template-privacy-policy h4 {font-size: 32px;}
+  .connect-social {margin-top: 40px;}
+  .connect-social p {font-size: 24px;margin-bottom: 20px !important;}
+  .addtoany_list.a2a_kit_size_32 a:not(.addtoany_special_service)>span {height: 40px !important;line-height: 40px !important;width: 40px !important;}
+  span.wpcf7-spinner {height: 68px;width: 248px;padding: 6px 58px;}
+  span.wpcf7-form-control-wrap.recaptcha {padding: 30px 0;}
+  .client_result_right_col {margin-top: 140px;}
+  .casestudy_text ul li {font-size: 18px;line-height: 1.6 !important;}
+  .casestudy_instagram {padding: 70px 0 180px 0;}
+  .casestudy_instagram.open .text_title {margin-bottom: 30px;}
+  .thankyou_title {font-size: 85px;margin-bottom: 40px;}
+  .thankyou_section p,.thankyou_section a {margin-top: 0px;font-size: 25px;}
+  .title_404 {font-size: 500px;}
+  .section_404_inner h2 {font-size: 20px;}
+  ul.section_404_ul li a {font-size: 20px;padding: 10px;}
+  ul.section_404_ul {gap: 15px;}
+  .section_404_inner h1 {font-size: 30px;line-height: 50px;}
+  .section_404_inner {gap: 20px;border-radius: 50px;}
 }
 
 @media only screen and (max-width:1399px){
@@ -84,17 +136,16 @@
   header { padding: 30px 0; }
   header nav>ul>li { margin: 0px 25px; }
   .banner { padding-top: 170px; }
-  h1 { font-size: 90px; line-height: 1.3; }
+  h1 { font-size: 65px; line-height: 1.3; }
   .banner .circle { top: 0; max-width: 220px; }
   .marquee_plateform { padding: 45px 0 0; }
   .marquee_plateform .marquee .item>span { font-size: 70px; line-height: 130px; }
   .marquee_plateform .marquee .item>span>span { line-height: 60px; padding: 0px 26px; font-size: 35px; }
-  .affordable h2 { font-size: 60px; }
+  .affordable h2 { font-size: 40px; }
   .banchmarketing h2 { font-size: 112px; }
   .title h2 { font-size: 40px; line-height: 42px; }
   footer .rr_footer { padding: 0px 10px; }
   .social_media .bg { top: -170px; }
-
   .service_link { margin-top: -56.5px; }
   .service_link .inner a { font-size: 26px; line-height: 70px; padding: 0px 30px; }
   .profitable_campaigns { margin-top: -56.5px; }
@@ -109,15 +160,20 @@
   .other_services .colin .bg>span { font-size: 30px; }
   .other_services .colin>span { font-size: 35px; line-height: 40px; }
   .other_services .colin .bg { padding: 25px 30px; }
-
   .comman_sec .inner{gap: 12px;}
   .animations_title h2{font-size: 135px;}
   .inner_banner .circle {margin-right: 20px;}
+  .casestudy_list {padding: 90px 0 90px 0;}
+  .casestudy_list {margin-top: -60px;}
+  .casestudy_list {padding: 80px 0 130px 0;}
+  .casestudy_title_div {padding-bottom: 40px;}
+  .casestudySlider .swiper-slide .swiper-slide-img {max-width: 430px;height: 410px;}
+  footer .rr_footer {margin-top: 0px;}
 
 }
 @media only screen and (max-width:1279px){
   .wrapper {padding: 0px 40px;}
-    h1 { font-size: 70px; line-height: 1.3; }
+    h1 { font-size: 50px; line-height: 1.3; }
     .banner .circle { top: -10px; max-width: 180px; right: 40px; }
     .banner .text { max-width: 416px; }
     .lets_talk { padding: 9.85px 12.11px 9.85px 34.45px; }
@@ -129,9 +185,8 @@
     .paid_ads .marquee .item { width: 220px; height: 200px; max-width: 220px; }
     .email_wrap .imgWrap { height: 420px; width: calc(33.33% - 20px); }
     .personInfo .heading h2,.personInfo .heading h2,
-    .social_media h2, .emailsec .left_col h2, .team_extension h2, .on_instagram .text_title h2, .trusted_by h2, .profitable_campaigns .left_col h2, .our_goal h2, .ads_comman_section h2, .paid_ads_service h2 ,.other_services h2{ font-size: 50px; line-height: 1.2; }
-
-    .affordable h2 { font-size: 50px; line-height: 100px; }
+    .social_media h2, .emailsec .left_col h2, .team_extension h2, .on_instagram .text_title h2, .trusted_by h2, .profitable_campaigns .left_col h2, .our_goal h2, .ads_comman_section h2, .paid_ads_service h2 ,.other_services h2{ font-size: 40px; line-height: 1.2; }
+    .affordable h2 { font-size: 40px; line-height: 100px; }
     .affordable { margin-top: -50px;padding: 0px 20px; }
     .comman_sec { margin-top: -50px; }
     .team_extension .col { padding: 110px 0 100px; max-width: 58%; }
@@ -143,7 +198,7 @@
     .on_instagram .text_title h2 { width: 411px; }
     .on_instagram .text_title p { width: calc(100% - 411px); }
     .banchmarketing h2 { font-size: 90px; }
-    .trusted_by .col:hover { transform: scale(1.2); }
+    /* .trusted_by .col:hover { transform: scale(1.2); } */
     .video-con-img picture img{width: 40px;}
 
     #customers-testimonials,
@@ -157,22 +212,20 @@
     #customers-testimonials .item .bg .bk_icon{width: 40px;}
     .emailsec { margin-top: -230px; padding: 0px 20px; }
     #customers-testimonials .item .bg .bk_icon { left: 25px; top: 20px; }
-    .emailsec .right_col .email { padding: 30px 35px; background-position: right 20px center;
-      background-size: 50px;}
+    .emailsec .right_col .email { padding: 30px 35px; background-position: right 20px center;background-size: 50px;}
     .emailsec .right_col .email em { font-size: 24px; line-height: 20px; margin-bottom: 15px; }
     p { font-size: 16px; line-height: 1.6 !important; }
     footer .top_footer p { width: 320px; font-size: 18px; line-height: 1.7 !important; }
     footer .top_footer>ul>li:not(:last-child) { margin-bottom: 22px; }
     footer .top_footer .let_blog>img { max-width: 250px; }
     footer .bottom_footer .wrapper { padding: 10px 30px;}
-
     .inner_banner .circle { right: 30px; max-width: 200px; }
     .service_link .inner a:not(:last-child) { margin-right: 10px; }
     .service_link .inner a img { margin-right: 10px; max-width: 40px; }
     .service_link .inner a { font-size: 26px; line-height: 70px; padding: 0px 16px; }
     .inner_banner { padding: 200px 0; }
     .profitable_campaigns .animation_col { width: 260px; height: 330px; margin-top: -70px; }
-    .ads_link li a { font-size: 17px; line-height: 55px; padding: 0px 30px; }
+    .ads_link li span { font-size: 17px; line-height: 55px; padding: 0px 30px; }
     .ads_link li+li { margin-left: -25px; }
     .animations_title h2 { line-height: 118px; font-size: 100px; }
     .animations_title { margin-top: 30px; }
@@ -205,6 +258,12 @@
   .localLeads-banner .col {width: calc(100% - 400px);}
   .leadslist ul {gap: 40px;}
   .casestudy_trusted_by {margin-top: 20px;}
+  .casestudySlider .swiper-slide .swiper-slide-img {max-width: 430px;height: 410px;}
+  .casestudyOverall ul {gap: 70px;}
+  .client_resultSwiper .swiper-slide {height: 300px;}
+  .client_resultSwiper .swiper-slide img {height: 300px;}
+  .client_result_space_col {width: 10%;}
+  h1.title_404 {font-size: 30vw;line-height: 1;}
 }
 
 @media only screen and (max-width:1023px){
@@ -251,7 +310,7 @@
   .profitable_campaigns { margin-top: -37px; }
   .profitable_campaigns .left_col h2 { word-wrap: break-word; }
   .profitable_campaigns .left_col h2 br{display: none !important;}
-  .ads_link li a { font-size: 14px; line-height: 55px; padding: 0px 18px; }
+  .ads_link li span { font-size: 14px; line-height: 55px; padding: 0px 18px; }
   .ads_link li+li { margin-left: -18px; }
   .other_services .wrapper { padding: 60px 40px; }
   .other_services .colin>span { font-size: 24px; line-height: 34px; }
@@ -326,7 +385,8 @@ header .navbar-toggler {display: none;}
   .affordable { margin-top: -25px; padding: 0px; }
   .comman_sec { margin-top: -25px; }
   .trusted_by  { padding: 50px 0px 0px; }
-  .trusted_by .col { width: calc(50% - 5px); height: 155px; }
+  .trusted_by .col { width: calc(50% - 5px) !important; height: 115px; }
+  .trusted_by .col.active{transform: scale(1.1);}
   .trusted_by .col .bg img{max-width: 100px;}
   .banner_image { height: 250px; max-height: 250px; margin-top: 30px; }
   #customers-testimonials, #customers-testimonials .item { height: auto; }
@@ -347,6 +407,7 @@ header .navbar-toggler {display: none;}
   .emailsec .right_col .email em { font-size: 18px; line-height: 10px; margin-bottom: 8px; }
   .emailsec .right_col .email span { font-size: 15px; line-height: 18px; }
   footer { padding-top: 60px; margin-top: -30px;border-radius: 0px; }
+  footer.innerpage_foorter{padding-top: 30px;}
   footer .top_footer p { width: 100%; font-size: 14px; line-height: 1.7 !important; order: 2;margin-bottom: 15px;}
   footer .top_footer>ul>li:not(:last-child) { margin-bottom: 0; }
   footer .top_footer>ul { width: 100%;order: 1; margin-bottom: 15px;}
@@ -365,20 +426,20 @@ header .navbar-toggler {display: none;}
   .inner_banner .circle { right: 0; max-width: 130px; position: relative; top: 0; margin: 0 auto; margin-right: 0;    transform: translate3d(0, 0%, 0px);}
   .inner_banner .wrapper{display: flex;flex-direction: column-reverse;}
   .service_link { margin-top: 0; }
-  .service_link .inner { border-radius: 0; }
-  .service_link .inner a { font-size: 14px; line-height: 35px; padding: 0px 7px; }
-  .service_link .inner a img { margin-right: 8px; max-width: 24px; }
+  .service_link .inner { border-radius: 0;width: 100%;gap: 15px; }
+  .service_link .inner a { font-size: 14px; line-height: 1; padding: 7px;flex-flow: column;gap: 5px;border-radius: 10px;margin-right: 0 !important;}
+  .service_link .inner a img { margin-right: 0px; max-width: 24px; padding-bottom: 5px;height: 30px;}
   .profitable_campaigns { margin-top: 0; }
   #campaigns_growth.profitable_campaigns, #ecommerce.profitable_campaigns, #seo.profitable_campaigns, .profitable_campaigns { padding: 40px 0 10px; }
   .profitable_campaigns .left_col, #ecommerce.profitable_campaigns .left_col { max-width: 100%; }
-  .social_media h2, .emailsec .left_col h2, .team_extension h2, .on_instagram .text_title h2, .trusted_by h2, .profitable_campaigns .left_col h2, .our_goal h2, .ads_comman_section h2, .paid_ads_service h2,.other_services h2 { font-size: 32px; line-height: 1.2; }
+  .social_media h2, .emailsec .left_col h2, .team_extension h2, .on_instagram .text_title h2, .trusted_by h2, .profitable_campaigns .left_col h2, .our_goal h2, .ads_comman_section h2, .paid_ads_service h2,.other_services h2 { font-size: 30px; line-height: 1.2; }
   .profitable_campaigns .left_col h2{margin-bottom: 15px;}
   .profitable_campaigns .wrapper:first-child {flex-direction: column-reverse;margin-bottom: 20px;}
   .profitable_campaigns .animation_col { width: 260px; height: 330px; margin-top: 0;margin-bottom: 40px; }
   body .profitable_campaigns .animation_col .col{width: 100%;height: 100%; border-radius: 10px;opacity: 1;top: 0;}
   body .profitable_campaigns .animation_col .col::after{opacity: 0;}
   body .ads_link li{ margin-left: 0;margin-bottom: 10px; }
-  .ads_link li a { font-size: 13px; line-height: 42px; padding: 0px 12px; }
+  .ads_link li span { font-size: 13px; line-height: 42px; padding: 0px 12px; }
   .profitable_campaigns .wrapper:nth-child(2n) { justify-content: center; }
   .animations_title { margin-top: 10px; }
   .profitable_campaigns .animation_col { width: 240px; height: 300px; margin-top: 0; display: block; margin: 0 auto; margin-bottom: 40px; }
@@ -397,7 +458,7 @@ header .navbar-toggler {display: none;}
   .our_goal .inner .right_col li h3 span { margin-right: 10px; }
   .our_goal .btn_col { margin-top: 40px; }
   .ads_comman_section { padding: 0 20px; }
-  .ads_comman_section .wrapper { padding: 40px 0px; }
+  .ads_comman_section .wrapper { padding: 40px 0px 0px; }
   .ads_comman_section h2 { margin-bottom: 10px; }
   .ads_comman_section .colin:first-child { margin-bottom: 20px; }
   .ads_comman_section .btn_col { margin-top: 30px; }
@@ -413,9 +474,9 @@ header .navbar-toggler {display: none;}
   .other_services .colin { height: 290px; padding: 25px 20px 30px; width: 100%; margin-bottom: 20px; }
   .other_services .colin:hover { transform: scale(1.01); }
   .other_services .colin .img { width: 100%; max-width: 200px; }
-  .thankyou_title {font-size: 100px;}
+  .thankyou_title {font-size: 60px;}
   .section_404 .no_flex_wrap{flex-wrap: wrap;gap: 20px;}
-  .title_404 {font-size: 500px;}
+  .title_404 {font-size: 200px;display: none;}
   .section_404_inner h2 {width: auto;}
   .section_404_inner {padding: 50px 20px;}
   .comman_sec .inner { gap: 10px; }
@@ -424,13 +485,15 @@ header .navbar-toggler {display: none;}
   .inner_banner .circle .circle_icon {width: 120px;height: 120px;}
   .inner_banner .circle .circle_text {width: 120px;height: 120px;object-fit: contain;}
   footer .bg {background-position: 0 80%;}
+  .contact_form_section {border-radius: 30px 30px 0px 0px;margin-top: -40px;padding: 50px 0 130px 0;}
   .form_row .inner_row {flex-direction: column;}
-  .form_row h2 {font-size: 30px;margin-top: 50px;margin-bottom: 20px;}
-  .form_row .inner_row .inner_col .form_input {width: calc(100% - 40px);padding: 15px 20px;height: auto;}
-  .form_row .inner_row .inner_col label {width: calc(100% - 40px);word-wrap: break-word;}
+  .form_row h2 {font-size: 25px;margin-top: 20px;margin-bottom: 15px;}
+  .form_row .inner_row .inner_col .form_input {width: calc(100vw - 40px);padding: 5px 10px;height: auto;font-size: 15px}
+  .form_row .inner_row .inner_col label {width: calc(100vw - 40px);word-wrap: break-word;font-size: 14px;padding-bottom: 5px;}
+  .form_row .inner_row .inner_col label sup{padding-left: 2px;}
   .form_row .inner_row .inner_col .wpcf7-list-item label {column-gap: 20px;}
   .form_row .inner_row .inner_col .form_group .form_group_inner p {flex-direction: column;}
-  .form_row .inner_row .inner_col .form_group .form_group_inner p>span:after {right: 65px;}
+  .form_row .inner_row .inner_col .form_group .form_group_inner p>span:after {right: 16px;top: 18px;width: 10px;height: 9px;background-size: contain;}
   .common-page{padding: 180px 0 120px;}
   .sitemap-list > ul > li > a{font-size: 25px;}
   .sitemap-list > ul > li > ul {margin-left: 50px;}
@@ -441,7 +504,7 @@ header .navbar-toggler {display: none;}
   .policy-list > ul > li{grid-template-columns: auto;gap: 20px;}
 
 
-  .personInfo .heading h2 {font-size: 35px;}
+  .personInfo .heading h2 {font-size: 30px;}
   .personInfo .inner-content {flex-direction: column-reverse;}
   .personInfo .inner-content .personImg {max-width: 100%;}
   .personInfo .inner-content .personContent {max-width: 100%;margin-top: 0px;}
@@ -454,21 +517,22 @@ header .navbar-toggler {display: none;}
   .commit-seciton .inner-commit .commit-content {margin-top: 0;}
   .leftPersonImg {max-width: 260px;height: 540px;bottom: -235px;}
   .casestudy_trusted_by {margin-bottom: 60px;}
-  .marquee_col {width: 195px !important;height: 125px;}
-  .marquee_bg img {height: 125px;}
+  .casestudy_trusted_by .marquee_col {width: 195px !important;height: 125px;}
+  .casestudy_trusted_by .marquee_bg img {height: 125px;object-fit: contain;}
   .casestudy_instagram {border-radius: 30px 30px 0 0;padding: 50px 0 220px 0;}
-  .casestudy_instagram .text_title h2 {font-size: 35px;line-height: 1.2;}
+  .casestudy_instagram .text_title h2 {font-size: 30px;line-height: 1.2;}
   .casestudy_instagram .text_title {margin-bottom: 30px;}
-  .casestudy_list_section .casestudy_list .casestudy_title_div .casestudy_title {font-size: 35px;line-height: 1.2;}
-  .casestudy_list {border-radius: 30px 30px 0px 0px;padding: 80px 0 80px 0;}
-  .casestudy_title_div {padding-bottom: 60px;}
+  .casestudy_list_section .casestudy_list .casestudy_title_div .casestudy_title {font-size: 30px;line-height: 1.2;}
+  .casestudy_list {border-radius: 30px 30px 0px 0px;padding: 40px 0 80px 0;}
+  .casestudy_title_div {padding-bottom: 20px;}
+  .casestudy_list_section .casestudy_list .casestudy_cols{gap: 10px;}
   .casestudy_list_section .casestudy_list .casestudy_cols {flex-direction: column;}
   .casestudy_list_section .casestudy_list .casestudy_cols .left_col {width: 100%;}
   .casestudy_list_section .casestudy_list .casestudy_cols .right_col {width: 100%;}
   .casestudy_links ul {flex-direction: column;gap: 20px;}
-  .casestudyOverall ul {flex-direction: column;gap: 40px;}
-  .casestudyOverall ul li {max-width: 100%;}
-  .client_result_left_col h2 {font-size: 35px;line-height: 1.2;}
+  .casestudyOverall ul {flex-wrap: wrap;gap: 20px;}
+  .casestudyOverall ul li {width: calc(50% - 20px);}
+  .client_result_left_col h2 {font-size: 30px;line-height: 1.2;}
   .client_result .wrapper {flex-direction: column;}
   .client_result_left_col {width: 100%;}
   .client_result_right_col {width: 100%;margin-top: 150px;}
@@ -477,4 +541,56 @@ header .navbar-toggler {display: none;}
   .client_resultSwiper .swiper-slide {height: 280px;}
   .casestudySlider .swiper-slide .swiper-slide-img{height: 400px;}
   .client_result {border-radius: 30px 30px 0px 0px;padding: 60px 0 60px 0;}
+  .form_row .inner_row .inner_col .form_group {margin-bottom: 10px;}
+  .form_row .inner_row .inner_col .wpcf7-list-item-label {font-size: 15px;}
+  .form_row .inner_row .inner_col .wpcf7-list-item label {margin-bottom: 15px;}
+  .wpcf7-form-control.wpcf7-submit {text-align: center;padding: 10px 30px;font-size: 20px;}
+  .form_row .inner_row .inner_col span#buisness_modal, .form_row .inner_row .inner_col span#marketing_places {margin-top: 10px;padding-bottom: 20px;}
+  .form_row .inner_row .inner_col span#buisness_modal, .form_row .inner_row .inner_col span#marketing_places {margin-top: 10px;padding-bottom: 20px;}
+  header .navbar-toggler img {height: 100px;}
+  header.fixed img {height: 40px;}
+  header.fixed .wrapper {align-content: center;}
+  header.fixed .wrapper>a {height: 40px;}
+  .lets_talk:hover ul li {transform: translateX(0px);}
+  .service_yellow_section {border-radius: 30px 30px 0 0;}
+  .casestudy_title_div img.casestudy_title_img {max-width: 100%;}
+  .casestudy_title_div {flex-direction: column;align-items: flex-start;}
+  .form_row .inner_row .inner_col span.wpcf7-form-control-wrap span.wpcf7-not-valid-tip{position: relative;bottom: 0;}
+  span.wpcf7-form-control-wrap.recaptcha{padding: 20px 0;}
+  .personInfo .heading{padding-bottom: 20px;}
+  .banner h1 {margin-bottom: 30px;}
+  .footerBtn.show {opacity: 1;transform: translateY(0);pointer-events: auto;}
+  .mobile_menu {display: flex;justify-content: space-around;margin-top: 25px;}
+  .mobile_menu .btn {display: block;}
+  .page-template-privacy-policy h4{font-size: 30px;}
+  .connect-social {margin-top: 20px;}
+  .connect-social p {font-size: 18px;margin-bottom: 10px !important;}
+  .addtoany_list.a2a_kit_size_32 a:not(.addtoany_special_service)>span {height: 30px !important;line-height: 30px !important;width: 30px !important;}
+  .addtoany_content {margin: 0 !important;}
+  span.wpcf7-spinner {height: 52px;padding: 8px;width: 192px;}
+  span.wpcf7-spinner:after {width: 30px;height: 30px;left: calc(50% - 18px);}
+  #full_wrapper{overflow: hidden;}
+  .ads_comman_section .colin:first-child + .btn_col {margin-top: 30px;margin-bottom: 30px;}
+  .casestudy_text ul li {font-size: 16px;line-height: 1.6 !important;}
+  .casestudyOverall ul li .overallDetails span {font-size: 16px;}
+  .casestudyOverall ul li .overallDetails strong {font-size: 20px;}
+  body.navbaractive {overflow: hidden;}
+  .btn:hover::after,.btn:hover::before {left: 0;}
+  .btn:active::after,.btn:active::before {left: 0;}
+  .btn:not(:active):hover::after {left: 10px;}
+  .btn:not(:active):hover::before{left: -10px;}
+  .section_404 .no_flex_wrap {justify-content: center;}
+  .section_404 {padding: 170px 0 80px;}
+  .thankyou_section {padding: 190px 0 95px;}
+  .thankyou_section p, .thankyou_section a {font-size: 18px;}
+  .menu-item.active a {font-weight: 800 !important;}
+  header{background: transparent;}
+}
+
+
+@media only screen and (min-device-width: 480px) and (max-device-width: 1000px) and (orientation: landscape) {
+  h1.title_404 {display:none}
+  .section_404 .col{justify-content: center;}
+  header nav>ul>li {margin: 0px 5px;padding: 0px 10px;}
+  header nav>ul>li span {right: -3px;top: 15px;}
 }
